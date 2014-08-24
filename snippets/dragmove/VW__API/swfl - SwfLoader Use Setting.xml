@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<snippet filetemplate="false" extension="cfm">
+<name>swfl - SwfLoader Use Setting</name>
+<help>swfl - SwfLoader Use Setting</help>
+<starttext><![CDATA[private function setSwfLoader():void {
+	_swfLoader = new SwfLoader();
+	_swfLoader.addEventListener(SwfLoader.LOAD_PROGRESS, loadProgress_hd);
+	_swfLoader.addEventListener(SwfLoader.LOAD_COMPLETE, loadComplete_hd);
+	_swfLoader.addEventListener(SwfLoader.LOAD_IOERROR, loadIOError_hd);
+	_swfLoader.addEventListener(SwfLoader.LOAD_SECURITYERROR, loadSecurityError_hd);
+	_swfLoader.addEventListener(SwfLoader.ACCESS_SWF_SECURITYERROR, accessSwfSecurityError_hd);
+	_swfLoader.addEventListener(SwfLoader.LOADER_ERROR, loaderError_hd);
+	
+	try {
+		_swfLoader.addURL("/flash/navi.swf", "naviSwf"); 
+		_swfLoader.start();
+	} catch(error:Error) {
+		
+	}
+}
+
+private function removeSwfLoaderEventHandler():void {
+	_swfLoader.removeEventListener(SwfLoader.LOAD_PROGRESS, loadProgress_hd);
+	_swfLoader.removeEventListener(SwfLoader.LOAD_COMPLETE, loadComplete_hd);
+	_swfLoader.removeEventListener(SwfLoader.LOAD_IOERROR, loadIOError_hd);
+	_swfLoader.removeEventListener(SwfLoader.LOAD_SECURITYERROR, loadSecurityError_hd);
+	_swfLoader.removeEventListener(SwfLoader.ACCESS_SWF_SECURITYERROR, accessSwfSecurityError_hd);
+	_swfLoader.removeEventListener(SwfLoader.LOADER_ERROR, loaderError_hd);
+}
+
+private function loadProgress_hd(e:CustomEvent):void {
+	//	trace("_swfLoader.bytesLoadedCurrent :", _swfLoader.bytesLoadedCurrent);
+	//	trace("_swfLoader.bytesTotalCurrent :", _swfLoader.bytesTotalCurrent);
+	//	trace("_swfLoader.percentageLoadedCurrent :", _swfLoader.percentageLoadedCurrent);
+	//	trace("_swfLoader.bytesLoaded :", _swfLoader.bytesLoaded);
+	//	trace("_swfLoader.bytesTotal :", _swfLoader.bytesTotal);
+	//	trace("_swfLoader.percentageLoaded :", _swfLoader.percentageLoaded);
+}
+
+private function loadComplete_hd(e:CustomEvent):void {
+	trace("loadComplete_hd");
+	
+	var paramObj:* = new Object();
+	paramObj.xml = xml;
+	
+	//contents setting
+	var _navi:* = _swfLoader.getSwf("naviSwf");
+	if(_navi != null) {
+		_navi.init(paramObj);
+		this.addChild(_navi);
+	}
+}
+		
+private function loadSecurityError_hd(e:CustomEvent):void {
+	trace("loadSecurityError_hd");
+	removeSwfLoaderEventHandler();
+}
+
+private function loadIOError_hd(e:CustomEvent):void {
+	trace("loadIOError_hd");
+	removeSwfLoaderEventHandler();
+}
+
+private function accessSwfSecurityError_hd(e:CustomEvent):void {
+	trace("accessSwfSecurityError_hd");
+	removeSwfLoaderEventHandler();
+}
+
+private function loaderError_hd(e:CustomEvent):void {
+	trace("loaderError_hd");
+	removeSwfLoaderEventHandler();
+}]]></starttext>
+<endtext><![CDATA[]]></endtext>
+</snippet>

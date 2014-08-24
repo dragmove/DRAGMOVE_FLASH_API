@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<snippet filetemplate="false" extension="cfm">
+<name>twkd - TweenMax_killDelayedCallsTo</name>
+<help>twkd - TweenMax_killDelayedCallsTo</help>
+<starttext><![CDATA[TweenMax.killDelayedCallsTo(]]></starttext>
+<endtext><![CDATA[);]]></endtext>
+</snippet>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<snippet filetemplate="false" extension="cfm">
+<name>mt - TextFieldUtil_makeTF</name>
+<help>mt</help>
+<starttext><![CDATA[TextFieldUtil.makeTF(]]></starttext>
+<endtext><![CDATA[140, 26, "fontName", 20,  0x7abac8, true, false, false, false, -1);]]></endtext>
+</snippet>

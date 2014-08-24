@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<snippet filetemplate="false" extension="cfm">
+<name>st - simpleTimer setting</name>
+<help>st - SimpleTimer setting</help>
+<starttext><![CDATA[private var _simpleTimer:SimpleTimer;
+		
+private function setTimer():void {
+	_simpleTimer = new SimpleTimer(1000, this, timer_hd);
+}
+		
+private function timer_hd():void {
+	if(_simpleTimer  != null) _simpleTimer.stop();
+	
+}
+]]></starttext>
+<endtext><![CDATA[]]></endtext>
+</snippet>

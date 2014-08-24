@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<snippet filetemplate="false" extension="cfm">
+<name>desc - class description</name>
+<help>desc - class description</help>
+<starttext><![CDATA[/*]]></starttext>
+<endtext><![CDATA[
+Class Name
+		
+::: DESCRIPTION :::
+
+			
+::: USE SAMPLE :::
+
+*/]]></endtext>
+</snippet>

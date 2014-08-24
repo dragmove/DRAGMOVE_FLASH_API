@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<snippet filetemplate="false" extension="cfm">
+<name>sr - SimpleRect_drawRectSprite</name>
+<help>sr - SimpleRect_drawRectSprite</help>
+<starttext><![CDATA[SimpleRect.drawRectSprite(]]></starttext>
+<endtext><![CDATA[);]]></endtext>
+</snippet>

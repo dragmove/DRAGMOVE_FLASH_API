@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<snippet filetemplate="false" extension="cfm">
+<name>pv - private var </name>
+<help>pv - private var </help>
+<starttext><![CDATA[private var ]]></starttext>
+<endtext><![CDATA[;]]></endtext>
+</snippet>

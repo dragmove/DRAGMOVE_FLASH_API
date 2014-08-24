@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<snippet filetemplate="false" extension="cfm">
+<name>act - activate</name>
+<help>act - activate</help>
+<starttext><![CDATA[private function activate(_index:int):void {
+	var targetObj:*; 
+	for(var i:uint = 0; i < _array.length; ++i) {
+		targetObj = _array[i];
+				
+		if(targetObj.index != _index) {
+					
+		}else{
+					
+		}
+	}
+}]]></starttext>
+<endtext><![CDATA[]]></endtext>
+</snippet>

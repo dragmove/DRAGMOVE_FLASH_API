@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<snippet filetemplate="false" extension="cfm">
+<name>ptf - protected function</name>
+<help>ptf - protected function</help>
+<starttext><![CDATA[protected function ]]></starttext>
+<endtext><![CDATA[():void {
+	
+}]]></endtext>
+</snippet>

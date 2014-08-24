@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<snippet filetemplate="false" extension="cfm">
+<name>xmll - XmlLoader Use Setting</name>
+<help>xmll - XmlLoader Use Setting</help>
+<starttext><![CDATA[private var xmlPath:String;
+private var xml:XML;
+private var _xmlLoader:XmlLoader;
+private var _statusTF:TextField;
+
+xmlPath = InitUtil.setParameters(SingletonStage.getInstance().getStage(), "xmlURL", "../flash/xml/index1.xml");
+setXmlLoader();
+
+private function setXmlLoader():void {
+	_xmlLoader = new XmlLoader();
+	_xmlLoader.addEventListener(XmlLoader.LOAD_PROGRESS, loadXmlProgress_hd);
+	_xmlLoader.addEventListener(XmlLoader.LOAD_COMPLETE, loadXmlComplete_hd);
+	_xmlLoader.addEventListener(XmlLoader.LOAD_IOERROR, loadXmlIOError_hd);
+	_xmlLoader.addEventListener(XmlLoader.LOAD_SECURITYERROR, loadXmlSecurityError_hd);
+			
+	//option handler
+	_xmlLoader.addEventListener(XmlLoader.PARSING_ERROR, parsingXmlError_hd);
+	_xmlLoader.addEventListener(XmlLoader.URLSTREAM_ERROR, urlStreamXmlError_hd);
+	_xmlLoader.addEventListener(XmlLoader.TOTALZERO_ERROR, totalZeroXmlError_hd);
+			
+	_xmlLoader.addURL(xmlPath, "indexXML");
+	_xmlLoader.start();
+}
+					
+private function removeXmlLoaderEventHandler():void {
+	_xmlLoader.removeEventListener(XmlLoader.LOAD_PROGRESS, loadXmlProgress_hd);
+	_xmlLoader.removeEventListener(XmlLoader.LOAD_COMPLETE, loadXmlComplete_hd);
+	_xmlLoader.removeEventListener(XmlLoader.LOAD_IOERROR, loadXmlIOError_hd);
+	_xmlLoader.removeEventListener(XmlLoader.LOAD_SECURITYERROR, loadXmlSecurityError_hd);
+	_xmlLoader.removeEventListener(XmlLoader.PARSING_ERROR, parsingXmlError_hd);
+	_xmlLoader.removeEventListener(XmlLoader.URLSTREAM_ERROR, urlStreamXmlError_hd);
+	_xmlLoader.removeEventListener(XmlLoader.TOTALZERO_ERROR, totalZeroXmlError_hd);
+}
+
+private function loadXmlProgress_hd(e:CustomEvent):void {
+//	trace("_xmlLoader.bytesLoadedCurrent :", _xmlLoader.bytesLoadedCurrent);
+//	trace("_xmlLoader.bytesTotalCurrent :", _xmlLoader.bytesTotalCurrent);
+//	trace("_xmlLoader.percentageLoadedCurrent :", _xmlLoader.percentageLoadedCurrent);
+//	trace("_xmlLoader.bytesLoaded :", _xmlLoader.bytesLoaded);
+//	trace("_xmlLoader.bytesTotal :", _xmlLoader.bytesTotal);
+//	trace("_xmlLoader.percentageLoaded :", _xmlLoader.percentageLoaded);
+}
+			
+private function loadXmlComplete_hd(e:CustomEvent):void {
+	trace("loadXmlComplete_hd");
+	xml = _xmlLoader.getXML("indexXML") as XML;
+	trace("xml :", xml);
+	
+	var paramObj:* = new Object();
+	paramObj.xml = xml;
+	
+	//contents setting
+	
+}
+
+private function loadXmlIOError_hd(e:CustomEvent):void {
+	trace("loadXmlIOError_hd");
+	removeXmlLoaderEventHandler();
+	setStatusTF();
+	_statusTF.htmlText = "xml Load IOError";
+}
+
+private function loadXmlSecurityError_hd(e:CustomEvent):void {
+	trace("loadXmlSecurityError_hd");
+	removeXmlLoaderEventHandler();
+	setStatusTF();
+	_statusTF.htmlText = "xml Load SecurityError";
+}
+
+private function parsingXmlError_hd(e:CustomEvent):void {
+	trace("parsingXmlError_hd");
+	removeXmlLoaderEventHandler();
+	setStatusTF();
+	_statusTF.htmlText = "xml Load parsingXmlError";
+}
+
+private function urlStreamXmlError_hd(e:CustomEvent):void {
+	trace("urlStreamXmlError_hd");
+	removeXmlLoaderEventHandler();
+	setStatusTF();
+	_statusTF.htmlText = "xml Load urlStreamXmlError";
+}
+
+private function totalZeroXmlError_hd(e:CustomEvent):void {
+	trace("totalZeroXmlError_hd");
+	removeXmlLoaderEventHandler();
+	setStatusTF();
+	_statusTF.htmlText = "xml Load urlStream totalZeroError";
+}
+
+private function setStatusTF():void {
+	_statusTF = TextFieldUtil.makeTF(SingletonStage.getInstance().getStage().stageWidth, SingletonStage.getInstance().getStage().stageHeight, "dotum", 11, 0, false, true, true, false, 0, 0, 0, 0, TextFormatAlign.CENTER);
+	this.addChild(_statusTF);
+}]]></starttext>
+<endtext><![CDATA[]]></endtext>
+</snippet>

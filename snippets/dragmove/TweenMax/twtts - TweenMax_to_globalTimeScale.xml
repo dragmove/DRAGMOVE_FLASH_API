@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<snippet filetemplate="false" extension="cfm">
+<name>twtts - TweenMax_to_globalTimeScale</name>
+<help>twtts - TweenMax_to_globalTimeScale</help>
+<starttext><![CDATA[TweenMax.to(TweenMax, 1, {globalTimeScale:1/10, ease:Quint.easeOut} );]]></starttext>
+<endtext><![CDATA[]]></endtext>
+</snippet>

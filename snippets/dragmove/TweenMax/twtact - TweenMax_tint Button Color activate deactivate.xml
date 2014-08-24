@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<snippet filetemplate="false" extension="cfm">
+<name>twtact - TweenMax_tint Button Color activate deactivate</name>
+<help>twtact - TweenMax_tint Button Color activate deactivate</help>
+<starttext><![CDATA[public function	activate():void {
+	TweenMax.to(_obj, 0.1, {tint:0x000000, ease:Expo.easeOut} );
+}
+
+public function	deactivate():void {
+	TweenMax.to(_obj, 0.5, {tint:null, ease:Cubic.easeOut} );
+}]]></starttext>
+<endtext><![CDATA[]]></endtext>
+</snippet>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<snippet filetemplate="false" extension="cfm">
+<name>rb - InteractionUtil_removeSimpleButtonInteraction</name>
+<help>rb - InteractionUtil_removeSimpleButtonInteraction</help>
+<starttext><![CDATA[InteractionUtil.removeSimpleButtonInteraction(]]></starttext>
+<endtext><![CDATA[_btnObj, _btnObjMouseInteraction);]]></endtext>
+</snippet>

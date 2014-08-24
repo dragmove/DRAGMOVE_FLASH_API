@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<snippet filetemplate="false" extension="cfm">
+<name>puf - public function </name>
+<help>public function</help>
+<starttext><![CDATA[public function	]]></starttext>
+<endtext><![CDATA[():void {
+	
+}]]></endtext>
+</snippet>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<snippet filetemplate="false" extension="cfm">
+<name>twb - TweenMax_to_bezier</name>
+<help>twb - TweenMax_to_bezier</help>
+<starttext><![CDATA[TweenMax.to(]]></starttext>
+<endtext><![CDATA[, 1, {x:_xPos, bezier:[{x:_xBezierPos}], ease:Expo.easeOut} );]]></endtext>
+</snippet>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<snippet filetemplate="false" extension="cfm">
+<name>twds - TweenMax_dropShadowFilter</name>
+<help>twds - TweenMax_dropShadowFilter</help>
+<starttext><![CDATA[TweenMax.to(]]></starttext>
+<endtext><![CDATA[, 1, {dropShadowFilter:{color:0x000000, alpha:1, blurX:12, blurY:12, strength:0.5, angle:60, distance:10}, ease:Quint.easeOut});]]></endtext>
+</snippet>

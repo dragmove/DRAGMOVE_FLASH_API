@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<snippet filetemplate="false" extension="cfm">
+<name>puv - public var </name>
+<help>public var </help>
+<starttext><![CDATA[public var ]]></starttext>
+<endtext><![CDATA[;]]></endtext>
+</snippet>

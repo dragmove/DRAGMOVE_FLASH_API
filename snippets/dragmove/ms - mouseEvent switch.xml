@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<snippet filetemplate="false" extension="cfm">
+<name>ms - mouseEvent switch</name>
+<help>ms - mouseEvent switch</help>
+<starttext><![CDATA[switch(e.type) {
+	case MouseEvent.ROLL_OVER :
+	]]></starttext>
+<endtext><![CDATA[
+	break;	
+	
+	case MouseEvent.ROLL_OUT :
+	
+	break;
+	
+	case MouseEvent.CLICK :
+	
+	break;
+}]]></endtext>
+</snippet>

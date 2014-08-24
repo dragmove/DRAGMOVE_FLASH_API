@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<snippet filetemplate="false" extension="cfm">
+<name>tcf - try catch finally</name>
+<help>tcf - try catch finally</help>
+<starttext><![CDATA[try {]]></starttext>
+<endtext><![CDATA[
+} catch(error:Error) {
+	
+} finally {
+	
+}]]></endtext>
+</snippet>

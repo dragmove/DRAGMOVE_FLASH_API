@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<snippet filetemplate="false" extension="cfm">
+<name>spuc - static public const</name>
+<help>spuc - static public const</help>
+<starttext><![CDATA[static public const ]]></starttext>
+<endtext><![CDATA[;]]></endtext>
+</snippet>

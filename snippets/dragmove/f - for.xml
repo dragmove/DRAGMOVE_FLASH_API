@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<snippet filetemplate="false" extension="cfm">
+<name>f - for</name>
+<help>f - for</help>
+<starttext><![CDATA[for(var i:uint = 0; i < ]]></starttext>
+<endtext><![CDATA[; ++i) {
+	
+}]]></endtext>
+</snippet>

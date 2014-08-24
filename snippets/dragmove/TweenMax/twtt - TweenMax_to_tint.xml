@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<snippet filetemplate="false" extension="cfm">
+<name>twtt - TweenMax_to_tint</name>
+<help>twtt - TweenMax_to_tint</help>
+<starttext><![CDATA[TweenMax.to( ]]></starttext>
+<endtext><![CDATA[, 0.1, {tint:0x000000, ease:Expo.easeOut} );]]></endtext>
+</snippet>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<snippet filetemplate="false" extension="cfm">
+<name>fontl - FontLoader Use Setting</name>
+<help>fontl - FontLoader Use Setting</help>
+<starttext><![CDATA[private var fontPath:String;
+private var _fontLoader:FontLoader;
+private var _statusTF:TextField;
+
+fontPath = InitUtil.setParameters(SingletonStage.getInstance().getStage(), "fontURL", "../bin-debug/font_RixGothicB.swf");
+setFontLoader();
+
+private function setFontLoader():void {
+	_fontLoader = new FontLoader();	
+	_fontLoader.addEventListener(FontLoader.LOAD_PROGRESS, loadFontProgress_hd);
+	_fontLoader.addEventListener(FontLoader.LOAD_COMPLETE, loadFontComplete_hd);
+	_fontLoader.addEventListener(FontLoader.LOAD_IOERROR, loadFontIOError_hd);
+	_fontLoader.addEventListener(FontLoader.LOAD_SECURITYERROR, loadFontSecurityError_hd);
+	_fontLoader.addEventListener(FontLoader.ACCESS_FONT_SECURITYERROR, accessFontSecurityError_hd);
+	_fontLoader.addURL(fontPath, "RixGothicM", "RixGothicM");
+	_fontLoader.start();
+}
+
+private function removeFontLoaderEventHandler():void {
+	_fontLoader.removeEventListener(FontLoader.LOAD_PROGRESS, loadFontProgress_hd);
+	_fontLoader.removeEventListener(FontLoader.LOAD_COMPLETE, loadFontComplete_hd);
+	_fontLoader.removeEventListener(FontLoader.LOAD_IOERROR, loadFontIOError_hd);
+	_fontLoader.removeEventListener(FontLoader.LOAD_SECURITYERROR, loadFontSecurityError_hd);
+	_fontLoader.removeEventListener(FontLoader.ACCESS_FONT_SECURITYERROR, accessFontSecurityError_hd);
+}
+
+private function loadFontProgress_hd(e:CustomEvent):void {
+//	trace("===== loadProgress_hd =====");
+//	trace("_fontLoader.bytesLoadedCurrent :", _fontLoader.bytesLoadedCurrent);
+//	trace("_fontLoader.bytesTotalCurrent :", _fontLoader.bytesTotalCurrent);
+//	trace("_fontLoader.percentageLoadedCurrent :", _fontLoader.percentageLoadedCurrent);
+//	trace("_fontLoader.bytesLoaded :", _fontLoader.bytesLoaded);
+//	trace("_fontLoader.bytesTotal :", _fontLoader.bytesTotal);
+//	trace("_fontLoader.percentageLoaded :", _fontLoader.percentageLoaded);
+}
+
+private function loadFontComplete_hd(e:CustomEvent):void {
+	//contents setting
+	
+}
+		
+private function loadFontIOError_hd(e:CustomEvent):void {
+	trace("loadIOError_hd");
+	removeFontLoaderEventHandler();
+	setStatusTF();
+	_statusTF.htmlText = "font_RixGothicB.swf <br> Font Load IOError";
+}
+
+private function loadFontSecurityError_hd(e:CustomEvent):void {
+	trace("loadSecurityError_hd");
+	removeFontLoaderEventHandler();
+	setStatusTF();
+	_statusTF.htmlText = "font_RixGothicB.swf <br> Font Load SecurityError";
+}
+
+private function accessFontSecurityError_hd(e:CustomEvent):void {
+	trace("accessFontSecurityError_hd");
+	removeFontLoaderEventHandler();
+	setStatusTF();
+	_statusTF.htmlText = "font_RixGothicB.swf <br> Font access SecurityError";
+}
+
+private function setStatusTF():void {
+	_statusTF = TextFieldUtil.makeTF(SingletonStage.getInstance().getStage().stageWidth, SingletonStage.getInstance().getStage().stageHeight, "dotum", 11, 0, false, true, true, false, 0, 0, 0, 0, TextFormatAlign.CENTER);
+	this.addChild(_statusTF);
+}]]></starttext>
+<endtext><![CDATA[]]></endtext>
+</snippet>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<snippet filetemplate="false" extension="cfm">
+<name>ac - addChild</name>
+<help>ac - addChild</help>
+<starttext><![CDATA[this.addChild(]]></starttext>
+<endtext><![CDATA[);]]></endtext>
+</snippet>

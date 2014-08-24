@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<snippet filetemplate="false" extension="cfm">
+<name>twt - TweenMax_to</name>
+<help>twt - TweenMax_to</help>
+<starttext><![CDATA[TweenMax.to( ]]></starttext>
+<endtext><![CDATA[, 1, {x:_xPos, y:_yPos, ease:Quint.easeInOut} );]]></endtext>
+</snippet>

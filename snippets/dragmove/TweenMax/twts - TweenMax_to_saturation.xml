@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<snippet filetemplate="false" extension="cfm">
+<name>twts - TweenMax_to_saturation</name>
+<help>twts - TweenMax_to_saturation</help>
+<starttext><![CDATA[TweenMax.to( ]]></starttext>
+<endtext><![CDATA[, 1, {colorMatrixFilter:{saturation:0}, ease:Cubic.easeOut});]]></endtext>
+</snippet>

@@ -1,0 +1,634 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"><!-- saved from url=(0014)about:internet --><html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link rel="stylesheet" href="../../../../style.css" type="text/css" media="screen"><link rel="stylesheet" href="../../../../print.css" type="text/css" media="print"><link rel="stylesheet" href="../../../../override.css" type="text/css"><meta name="keywords" content="VideoPlayer,com.vwonderland.control.video.VideoPlayer,ASYNC_ERROR,CHANGE_VIDEO_MODE,CLEAR_VIDEO,COMPLETE_LOAD_VIDEO,FINISH_VIDEO,MODE_INIT,MODE_NONE,MODE_PAUSE,MODE_PLAY,MODE_STOP,NETCONNECTION_CONNECT_CLOSED,NETCONNECTION_CONNECT_FAIL,NETCONNECTION_CONNECT_REJECTED,NETSTREAM_BUFFER_EMPTY,NETSTREAM_BUFFER_FLUSH,NETSTREAM_BUFFER_FULL,NETSTREAM_NOT_FOUND,NETSTREAM_PLAY_NOSUPPORTEDTRACKFOUND,NETSTREAM_SEEK_INVALIDTIME,NETSTREAM_SEEK_NOTIFY,PROGRESS_LOAD_VIDEO,READY_VIDEO_METADATA,START_VIDEO,downloadPercentage,downloadTime,duration,extraObject,index,metaData,mode,muteStatus,netStream,progressPercentage,time,videoHeight,videoWidth,clearVideo,connectStream,destroy,init,netConnectionHandler,netStreamHandler,onMetaDataHandler,pause,play,progressStatusCheckHandler,seek,setMute,setPan,setURL,setVolume,stop"><title>com.vwonderland.control.video.VideoPlayer</title><script src="../../../../AC_OETags.js" type="text/javascript"></script></head><body><script language="javascript" type="text/javascript" src="../../../../asdoc.js"></script><script language="javascript" type="text/javascript" src="../../../../help.js"></script><script language="javascript" type="text/javascript" src="../../../../cookies.js"></script><script language="javascript" type="text/javascript"><!--
+				asdocTitle = 'VideoPlayer - API Documentation';
+				var baseRef = '../../../../';
+				window.onload = configPage;
+			--></script>
+<script type="text/javascript">
+			scrollToNameAnchor();
+		</script><table class="titleTable" cellpadding="0" cellspacing="0" id="titleTable" style="display:none"><tr><td class="titleTableTitle" align="left">API Documentation</td><td class="titleTableTopNav" align="right"><a href="../../../../package-summary.html" onclick="loadClassListFrame('../../../../all-classes.html')">All Packages</a>&nbsp;|&nbsp;<a href="../../../../class-summary.html" onclick="loadClassListFrame('../../../../all-classes.html')">All Classes</a>&nbsp;|&nbsp;<a href="../../../../all-index-A.html" onclick="loadClassListFrame('../../../../index-list.html')">Index</a>&nbsp;|&nbsp;<a id="framesLink1" href="../../../../index.html?com/vwonderland/control/video/VideoPlayer.html&amp;com/vwonderland/control/video/class-list.html">Frames</a><a id="noFramesLink1" style="display:none" href="" onclick="parent.location=document.location"> No Frames </a></td><td class="titleTableLogo" align="right" rowspan="3"><img src="../../../../images/logo.jpg" class="logoImage" alt=" Adobe Logo " title=" Adobe Logo "></td></tr><tr class="titleTableRow2"><td class="titleTableSubTitle" id="subTitle" align="left">VideoPlayer</td><td class="titleTableSubNav" id="subNav" align="right"><a href="#propertySummary">Properties</a>&nbsp;| <a href="#methodSummary">Methods</a>&nbsp;| <a href="#constantSummary">Constants</a>&nbsp;| <a href="#includeExamplesSummary">Examples</a></td></tr><tr class="titleTableRow3"><td colspan="3">&nbsp;</td></tr></table><script language="javascript" type="text/javascript" xml:space="preserve">
+				<!--
+				
+					if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("VideoPlayer"); titleBar_setSubNav(true,true,false,false,false,false,false,false,true,true,false	,false,false,false,false,false);}	
+				-->
+			</script><div xmlns:fn="http://www.w3.org/2005/xpath-functions" class="MainContent"><table class="classHeaderTable" cellpadding="0" cellspacing="0"><tr><td class="classHeaderTableLabel">Package</td><td><a href="package-detail.html" onclick="javascript:loadClassListFrame('class-list.html')">com.vwonderland.control.video</a></td></tr><tr><td class="classHeaderTableLabel">Class</td><td class="classSignature">public  class  VideoPlayer</td></tr><tr><td class="classHeaderTableLabel">Inheritance</td><td class="inheritanceList">VideoPlayer  <img src="../../../../images/inherit-arrow.gif" title="Inheritance" alt="Inheritance" class="inheritArrow"> flash.display.Sprite</td></tr><tr><td class="classHeaderTableLabel">Implements</td><td> <a href="../../../../com/vwonderland/base/IControllableObject.html">IControllableObject</a></td></tr></table><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b> Language Version :&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b> Since :&nbsp;</b></td><td>27.09.2010</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b> Runtime Versions :&nbsp;</b></td><td>AIR 1.0, Flash Player  9.0</td></tr></table><p></p><p></p><p></p>
+	 VideoPlayer. 
+	 <p>cuePoint 기능은 제공하지 않으므로, connectStream Function을 override하여 세부 구현해야 합니다.</p>
+	              <p>SecurityError에 반응하지 않습니다. 이것은 Flash Media Server 또는 Flash Remoting을 실행하는 응용 프로그램 서버에서 NetConnection.call 함수가 호출될 때 SecurityError Event가 발생하기 때문입니다. 본 VideoPlayer Class는 Flash Media Server와 연동하는 기능은 제공하지 않습니다.</p>
+	           <p></p><p><a href="#includeExamplesSummary">View the examples</a></p><br/><hr></div><a name="propertySummary"></a><div class="summarySection"><div class="summaryTableTitle">Public Properties</div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableProperty"><tr><th>&nbsp;</th><th colspan="2">Property</th><th class="summaryTableOwnerCol">Defined By</th></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#downloadPercentage" class="signatureLink">downloadPercentage</a> : Number<div class="summaryTableDescription">[read-only] 
+		 Video File의 download percentage(netStream bytesLoaded / netStream bytesTotal) 반환 
+		 </div></td><td class="summaryTableOwnerCol">VideoPlayer</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#downloadTime" class="signatureLink">downloadTime</a> : Number<div class="summaryTableDescription">[read-only] 
+		 Video File의 현재까지 download되어  재생 가능한 duration time(downloadPercentage / metadata duration) 반환
+		 </div></td><td class="summaryTableOwnerCol">VideoPlayer</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#duration" class="signatureLink">duration</a> : Number<div class="summaryTableDescription">[read-only] 
+		 Video File의 재생 시간(metadata duration) 반환
+		 </div></td><td class="summaryTableOwnerCol">VideoPlayer</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#extraObject" class="signatureLink">extraObject</a> : Object<div class="summaryTableDescription"> extra Variable</div></td><td class="summaryTableOwnerCol">VideoPlayer</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#index" class="signatureLink">index</a> : int<div class="summaryTableDescription">
+		 Indicates Order variable
+		 </div></td><td class="summaryTableOwnerCol">VideoPlayer</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#metaData" class="signatureLink">metaData</a> : Object<div class="summaryTableDescription">[read-only] 
+		 metaData Object 반환
+		 </div></td><td class="summaryTableOwnerCol">VideoPlayer</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#mode" class="signatureLink">mode</a> : String<div class="summaryTableDescription">[read-only] 
+		 현재 Video mode(MODE_NONE, MODE_INIT, MODE_PLAY, MODE_PAUSE, MODE_STOP) 반환
+		 </div></td><td class="summaryTableOwnerCol">VideoPlayer</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#muteStatus" class="signatureLink">muteStatus</a> : Boolean<div class="summaryTableDescription">[read-only] 
+		 sound mute 상태 반환
+		 </div></td><td class="summaryTableOwnerCol">VideoPlayer</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#netStream" class="signatureLink">netStream</a> : NetStream<div class="summaryTableDescription">[read-only] 
+		 netStream instance 반환
+		 </div></td><td class="summaryTableOwnerCol">VideoPlayer</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#progressPercentage" class="signatureLink">progressPercentage</a> : Number<div class="summaryTableDescription">[read-only] 
+		 Video File의 재생 시간 대비 재생 시점에 대한 progress percentage(netStream time / metadata duration) 반환 
+		 </div></td><td class="summaryTableOwnerCol">VideoPlayer</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#time" class="signatureLink">time</a> : Number<div class="summaryTableDescription">[read-only] 
+		 Video File 재생 헤드의 second 단위 위치 (netStream time) 반환
+		 </div></td><td class="summaryTableOwnerCol">VideoPlayer</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#videoHeight" class="signatureLink">videoHeight</a> : int<div class="summaryTableDescription">
+		 Video의 height value 반환
+		 </div></td><td class="summaryTableOwnerCol">VideoPlayer</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#videoWidth" class="signatureLink">videoWidth</a> : int<div class="summaryTableDescription">
+		 Video의 width value 반환
+		 </div></td><td class="summaryTableOwnerCol">VideoPlayer</td></tr></table></div><a name="methodSummary"></a><div class="summarySection"><div class="summaryTableTitle">Public Methods </div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableMethod"><tr><th>&nbsp;</th><th colspan="2">Method</th><th class="summaryTableOwnerCol">Defined By</th></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#VideoPlayer()" class="signatureLink">VideoPlayer</a>(_width:Number = 320, _height:Number = 240)</div><div class="summaryTableDescription">
+		 Constructor
+		 </div></td><td class="summaryTableOwnerCol">VideoPlayer</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#destroy()" class="signatureLink">destroy</a>(_obj:Object = null):void</div><div class="summaryTableDescription"> destroy VideoPlayer instance
+		  </div></td><td class="summaryTableOwnerCol">VideoPlayer</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#init()" class="signatureLink">init</a>(_obj:Object = null):void</div><div class="summaryTableDescription"> extra initialize Function.</div></td><td class="summaryTableOwnerCol">VideoPlayer</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#pause()" class="signatureLink">pause</a>():void</div><div class="summaryTableDescription">
+		 pause Video File
+		 </div></td><td class="summaryTableOwnerCol">VideoPlayer</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#play()" class="signatureLink">play</a>():void</div><div class="summaryTableDescription">
+		 play Video File
+		 </div></td><td class="summaryTableOwnerCol">VideoPlayer</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#seek()" class="signatureLink">seek</a>(_seekTime:Number):void</div><div class="summaryTableDescription">
+		 seek Video File's keyFrame 	(지정한 _seekTime과 가장 가까운 keyFrame의 검색)
+		 </div></td><td class="summaryTableOwnerCol">VideoPlayer</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#setMute()" class="signatureLink">setMute</a>(_flag_mute:Boolean = false):void</div><div class="summaryTableDescription">
+		 sound mute status setting
+		 </div></td><td class="summaryTableOwnerCol">VideoPlayer</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#setPan()" class="signatureLink">setPan</a>(_pan:Number):void</div><div class="summaryTableDescription">
+		 speaker sound panning setting
+		 </div></td><td class="summaryTableOwnerCol">VideoPlayer</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#setURL()" class="signatureLink">setURL</a>(_videoURL:String, _bufferSecond:Number = 0.1, _smoothing:Boolean = false, _preventCache:Boolean = false, _preventAutoDownload:Boolean = false, _checkPolicyFile:Boolean = false):void</div><div class="summaryTableDescription">
+		 play시킬 Video File URL 및 play option setting
+		 </div></td><td class="summaryTableOwnerCol">VideoPlayer</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#setVolume()" class="signatureLink">setVolume</a>(_volume:Number):void</div><div class="summaryTableDescription">
+		 sound volume setting
+		 </div></td><td class="summaryTableOwnerCol">VideoPlayer</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#stop()" class="signatureLink">stop</a>(_closeAutoDownload:Boolean = false):void</div><div class="summaryTableDescription">
+		 stop Video File
+		 </div></td><td class="summaryTableOwnerCol">VideoPlayer</td></tr></table></div><a name="protectedMethodSummary"></a><div class="summarySection"><div class="summaryTableTitle">Protected Methods </div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableProtectedMethod"><tr><th>&nbsp;</th><th colspan="2">Method</th><th class="summaryTableOwnerCol">Defined By</th></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#clearVideo()" class="signatureLink">clearVideo</a>():void</div><div class="summaryTableDescription">
+		 
+		 </div></td><td class="summaryTableOwnerCol">VideoPlayer</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#connectStream()" class="signatureLink">connectStream</a>():void</div><div class="summaryTableDescription">
+		 
+		 </div></td><td class="summaryTableOwnerCol">VideoPlayer</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#netConnectionHandler()" class="signatureLink">netConnectionHandler</a>(e:NetStatusEvent):void</div><div class="summaryTableDescription">
+		 
+		 </div></td><td class="summaryTableOwnerCol">VideoPlayer</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#netStreamHandler()" class="signatureLink">netStreamHandler</a>(e:NetStatusEvent):void</div><div class="summaryTableDescription">
+		 
+		 </div></td><td class="summaryTableOwnerCol">VideoPlayer</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#onMetaDataHandler()" class="signatureLink">onMetaDataHandler</a>(_data:Object):void</div><div class="summaryTableDescription">
+		 
+		 </div></td><td class="summaryTableOwnerCol">VideoPlayer</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#progressStatusCheckHandler()" class="signatureLink">progressStatusCheckHandler</a>(e:Event = null):void</div><div class="summaryTableDescription">
+		 
+		 </div></td><td class="summaryTableOwnerCol">VideoPlayer</td></tr></table></div><a name="constantSummary"></a><div class="summarySection"><div class="summaryTableTitle">Public Constants</div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableConstant"><tr><th>&nbsp;</th><th colspan="2">Constant</th><th class="summaryTableOwnerCol">Defined By</th></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#ASYNC_ERROR" class="signatureLink">ASYNC_ERROR</a> : String = com.vwonderland.control.video.VideoPlayer.ASYNC_ERROR<div class="summaryTableDescription">[static] 
+		 기본 비동기 코드에서 비동기적으로 예외 발생시 전달되는 Event입니다.</div></td><td class="summaryTableOwnerCol">VideoPlayer</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#CHANGE_VIDEO_MODE" class="signatureLink">CHANGE_VIDEO_MODE</a> : String = com.vwonderland.control.video.VideoPlayer.CHANGE_VIDEO_MODE<div class="summaryTableDescription">[static] 
+		 Video mode(MODE_NONE, MODE_INIT, MODE_PLAY, MODE_PAUSE, MODE_STOP)의 변경시 발생하는 Event입니다.</div></td><td class="summaryTableOwnerCol">VideoPlayer</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#CLEAR_VIDEO" class="signatureLink">CLEAR_VIDEO</a> : String = com.vwonderland.control.video.VideoPlayer.CLEAR_VIDEO<div class="summaryTableDescription">[static] 
+		 화면에 표시되는 video File의 image가 지워질 때 발생하는 Event입니다.</div></td><td class="summaryTableOwnerCol">VideoPlayer</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#COMPLETE_LOAD_VIDEO" class="signatureLink">COMPLETE_LOAD_VIDEO</a> : String = com.vwonderland.control.video.VideoPlayer.COMPLETE_LOAD_VIDEO<div class="summaryTableDescription">[static] 
+		 Video File의  MetaData의 duration data 취득과 download 완료, 두 조건의 충족시 발생하는 Event입니다.</div></td><td class="summaryTableOwnerCol">VideoPlayer</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#FINISH_VIDEO" class="signatureLink">FINISH_VIDEO</a> : String = com.vwonderland.control.video.VideoPlayer.FINISH_VIDEO<div class="summaryTableDescription">[static] 
+		 NetStatusEvent의 NetStream.Play.Stop info Code 출력시 발생하는 Event입니다.</div></td><td class="summaryTableOwnerCol">VideoPlayer</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#MODE_INIT" class="signatureLink">MODE_INIT</a> : String = com.vwonderland.control.video.VideoPlayer.MODE_INIT<div class="summaryTableDescription">[static] 
+		 VIDEO MODE - VideoPlayer instance 생성 후, setURL Function 실행으로 play시킬 Video File URL이 할당된 상태
+		 </div></td><td class="summaryTableOwnerCol">VideoPlayer</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#MODE_NONE" class="signatureLink">MODE_NONE</a> : String = com.vwonderland.control.video.VideoPlayer.MODE_NONE<div class="summaryTableDescription">[static] 
+		 VIDEO MODE - VideoPlayer instance 생성시 or destroy Function 실행 후
+		 </div></td><td class="summaryTableOwnerCol">VideoPlayer</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#MODE_PAUSE" class="signatureLink">MODE_PAUSE</a> : String = com.vwonderland.control.video.VideoPlayer.MODE_PAUSE<div class="summaryTableDescription">[static] 
+		 VIDEO MODE - play Function이 정상적으로 수행된 후, pause Function이 정상적으로 수행된 상태
+		 </div></td><td class="summaryTableOwnerCol">VideoPlayer</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#MODE_PLAY" class="signatureLink">MODE_PLAY</a> : String = com.vwonderland.control.video.VideoPlayer.MODE_PLAY<div class="summaryTableDescription">[static] 
+		 VIDEO MODE - setURL Function 실행으로 play시킬 Video File URL이 할당된 후, play Function이 정상적으로 수행된 상태
+		 </div></td><td class="summaryTableOwnerCol">VideoPlayer</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#MODE_STOP" class="signatureLink">MODE_STOP</a> : String = com.vwonderland.control.video.VideoPlayer.MODE_STOP<div class="summaryTableDescription">[static] 
+		 VIDEO MODE - play Function이 정상적으로 수행된 후, stop Function이 정상적으로 수행된 상태
+		 </div></td><td class="summaryTableOwnerCol">VideoPlayer</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#NETCONNECTION_CONNECT_CLOSED" class="signatureLink">NETCONNECTION_CONNECT_CLOSED</a> : String = com.vwonderland.control.video.VideoPlayer.NETCONNECTION_CONNECT_CLOSED<div class="summaryTableDescription">[static] 
+		 NetStatusEvent의 NetConnection.Connect.Closed info Code 출력시(Video File을 재생하기 위한 connection 연결이 성공적으로 종료된 경우) 발생하는 Event입니다.</div></td><td class="summaryTableOwnerCol">VideoPlayer</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#NETCONNECTION_CONNECT_FAIL" class="signatureLink">NETCONNECTION_CONNECT_FAIL</a> : String = com.vwonderland.control.video.VideoPlayer.NETCONNECTION_CONNECT_FAIL<div class="summaryTableDescription">[static] 
+		 NetStatusEvent의 NetConnection.Connect.Failed info Code 출력시(Video File을 재생하기 위한 connection 연결 시도에 실패한 경우) 발생하는 Event입니다.</div></td><td class="summaryTableOwnerCol">VideoPlayer</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#NETCONNECTION_CONNECT_REJECTED" class="signatureLink">NETCONNECTION_CONNECT_REJECTED</a> : String = com.vwonderland.control.video.VideoPlayer.NETCONNECTION_CONNECT_REJECTED<div class="summaryTableDescription">[static] 
+		 NetStatusEvent의 NetConnection.Connect.Rejected info Code 출력시(Video File을 재생하기 위한 connection 연결 시도에  해당 프로그램에 대한 액세스 권한이 없을 경우) 발생하는 Event입니다.</div></td><td class="summaryTableOwnerCol">VideoPlayer</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#NETSTREAM_BUFFER_EMPTY" class="signatureLink">NETSTREAM_BUFFER_EMPTY</a> : String = com.vwonderland.control.video.VideoPlayer.NETSTREAM_BUFFER_EMPTY<div class="summaryTableDescription">[static] 
+		 NetStatusEvent의 NetStream.Buffer.Empty info Code 출력시(buffer를 채우기에 충분할만큼 신속하게 data가 수신되지 않을 경우이며, NETSTREAM_BUFFER_FULL Event를 추가로 발생시키고 buffer가 채워질 때까지 데이터 흐름을 중단) 발생하는 Event입니다.</div></td><td class="summaryTableOwnerCol">VideoPlayer</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#NETSTREAM_BUFFER_FLUSH" class="signatureLink">NETSTREAM_BUFFER_FLUSH</a> : String = com.vwonderland.control.video.VideoPlayer.NETSTREAM_BUFFER_FLUSH<div class="summaryTableDescription">[static] 
+		 NetStatusEvent의 NetStream.Buffer.Flush info Code 출력시(data의 stream이 완료되어 남아 있는 buffer가 비워질 경우) 발생하는 Event입니다.</div></td><td class="summaryTableOwnerCol">VideoPlayer</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#NETSTREAM_BUFFER_FULL" class="signatureLink">NETSTREAM_BUFFER_FULL</a> : String = com.vwonderland.control.video.VideoPlayer.NETSTREAM_BUFFER_FULL<div class="summaryTableDescription">[static] 
+		 NetStatusEvent의 NetStream.Buffer.Empty info Code 출력시(buffer가 채워지고 stream이 Video File의 재생을 시작할 경우) 발생하는 Event입니다.</div></td><td class="summaryTableOwnerCol">VideoPlayer</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#NETSTREAM_NOT_FOUND" class="signatureLink">NETSTREAM_NOT_FOUND</a> : String = com.vwonderland.control.video.VideoPlayer.NETSTREAM_NOT_FOUND<div class="summaryTableDescription">[static] 
+		 NetStatusEvent의 NetStream.Play.StreamNotFound info Code 출력시(play Function 실행 후, 재생할 video File을 찾을 수 없을 경우) 발생하는 Event입니다 
+		 </div></td><td class="summaryTableOwnerCol">VideoPlayer</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#NETSTREAM_PLAY_NOSUPPORTEDTRACKFOUND" class="signatureLink">NETSTREAM_PLAY_NOSUPPORTEDTRACKFOUND</a> : String = com.vwonderland.control.video.VideoPlayer.NETSTREAM_PLAY_NOSUPPORTEDTRACKFOUND<div class="summaryTableDescription">[static] 
+		 NetStatusEvent의 NetStream.Play.NoSupportedTrackFound info Code 출력시(setURL Function으로 할당된 File이 재생 불가능한 File일 경우) 발생하는 Event입니다.</div></td><td class="summaryTableOwnerCol">VideoPlayer</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#NETSTREAM_SEEK_INVALIDTIME" class="signatureLink">NETSTREAM_SEEK_INVALIDTIME</a> : String = com.vwonderland.control.video.VideoPlayer.NETSTREAM_SEEK_INVALIDTIME<div class="summaryTableDescription">[static] 
+		 NetStatusEvent의 NetStream.Seek.InvalidTime info Code 출력시(seek Function을 이용한 Video File의 keyFrame 검색시, 현재까지 download된 Video data의 끝 부분을 지나서 검색 or 재생하려고 했을 경우) 발생하는 Event입니다.</div></td><td class="summaryTableOwnerCol">VideoPlayer</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#NETSTREAM_SEEK_NOTIFY" class="signatureLink">NETSTREAM_SEEK_NOTIFY</a> : String = com.vwonderland.control.video.VideoPlayer.NETSTREAM_SEEK_NOTIFY<div class="summaryTableDescription">[static] 
+		 NetStatusEvent의 NetStream.Seek.Notify info Code 출력시(seek Function을 이용한 Video File의 keyFrame 검색이 완료되었을 경우) 발생하는 Event입니다.</div></td><td class="summaryTableOwnerCol">VideoPlayer</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#PROGRESS_LOAD_VIDEO" class="signatureLink">PROGRESS_LOAD_VIDEO</a> : String = com.vwonderland.control.video.VideoPlayer.PROGRESS_LOAD_VIDEO<div class="summaryTableDescription">[static] 
+		 Video File의 download 진행시 발생하는 Event입니다.</div></td><td class="summaryTableOwnerCol">VideoPlayer</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#READY_VIDEO_METADATA" class="signatureLink">READY_VIDEO_METADATA</a> : String = com.vwonderland.control.video.VideoPlayer.READY_VIDEO_METADATA<div class="summaryTableDescription">[static] 
+		 setURL Function 실행 후, Video File의 MetaData의 duration data 취득시 발생하는 Event입니다.</div></td><td class="summaryTableOwnerCol">VideoPlayer</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#START_VIDEO" class="signatureLink">START_VIDEO</a> : String = com.vwonderland.control.video.VideoPlayer.START_VIDEO<div class="summaryTableDescription">[static] 
+		 NetStatusEvent의 NetStream.Play.Start info Code 출력시 발생하는 Event입니다.</div></td><td class="summaryTableOwnerCol">VideoPlayer</td></tr></table></div><script language="javascript" type="text/javascript"><!--
+										showHideInherited();
+										--></script><div class="MainContent"><div class="detailSectionHeader">Property Detail</div><a name="propertyDetail"></a><a name="downloadPercentage"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">downloadPercentage</td><td class="detailHeaderType">property</td></tr></table><div class="detailBody"><code>downloadPercentage:Number</code>&nbsp;&nbsp;[read-only] <p></p><p></p><p>
+		 Video File의 download percentage(netStream bytesLoaded / netStream bytesTotal) 반환 
+		 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get downloadPercentage():Number</code><br/></div><a name="propertyDetail"></a><a name="downloadTime"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">downloadTime</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>downloadTime:Number</code>&nbsp;&nbsp;[read-only] <p></p><p></p><p>
+		 Video File의 현재까지 download되어  재생 가능한 duration time(downloadPercentage / metadata duration) 반환
+		 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get downloadTime():Number</code><br/></div><a name="propertyDetail"></a><a name="duration"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">duration</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>duration:Number</code>&nbsp;&nbsp;[read-only] <p></p><p></p><p>
+		 Video File의 재생 시간(metadata duration) 반환
+		 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get duration():Number</code><br/></div><a name="propertyDetail"></a><a name="extraObject"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">extraObject</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public var extraObject:Object</code><p></p><p></p><p> extra Variable</p></div><a name="propertyDetail"></a><a name="index"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">index</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>index:int</code><p></p><p></p><p>
+		 Indicates Order variable
+		 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get index():int</code><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function set index(value:int):void</code><br/></div><a name="propertyDetail"></a><a name="metaData"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">metaData</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>metaData:Object</code>&nbsp;&nbsp;[read-only] <p></p><p></p><p>
+		 metaData Object 반환
+		 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get metaData():Object</code><br/></div><a name="propertyDetail"></a><a name="mode"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">mode</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>mode:String</code>&nbsp;&nbsp;[read-only] <p></p><p></p><p>
+		 현재 Video mode(MODE_NONE, MODE_INIT, MODE_PLAY, MODE_PAUSE, MODE_STOP) 반환
+		 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get mode():String</code><br/></div><a name="propertyDetail"></a><a name="muteStatus"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">muteStatus</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>muteStatus:Boolean</code>&nbsp;&nbsp;[read-only] <p></p><p></p><p>
+		 sound mute 상태 반환
+		 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get muteStatus():Boolean</code><br/></div><a name="propertyDetail"></a><a name="netStream"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">netStream</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>netStream:NetStream</code>&nbsp;&nbsp;[read-only] <p></p><p></p><p>
+		 netStream instance 반환
+		 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get netStream():NetStream</code><br/></div><a name="propertyDetail"></a><a name="progressPercentage"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">progressPercentage</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>progressPercentage:Number</code>&nbsp;&nbsp;[read-only] <p></p><p></p><p>
+		 Video File의 재생 시간 대비 재생 시점에 대한 progress percentage(netStream time / metadata duration) 반환 
+		 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get progressPercentage():Number</code><br/></div><a name="propertyDetail"></a><a name="time"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">time</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>time:Number</code>&nbsp;&nbsp;[read-only] <p></p><p></p><p>
+		 Video File 재생 헤드의 second 단위 위치 (netStream time) 반환
+		 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get time():Number</code><br/></div><a name="propertyDetail"></a><a name="videoHeight"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">videoHeight</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>videoHeight:int</code><p></p><p></p><p>
+		 Video의 height value 반환
+		 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get videoHeight():int</code><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function set videoHeight(value:int):void</code><br/></div><a name="propertyDetail"></a><a name="videoWidth"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">videoWidth</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>videoWidth:int</code><p></p><p></p><p>
+		 Video의 width value 반환
+		 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get videoWidth():int</code><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function set videoWidth(value:int):void</code><br/></div><a name="constructorDetail"></a><div class="detailSectionHeader">Constructor Detail</div><a name="VideoPlayer()"></a><a name="VideoPlayer(Number,Number)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">VideoPlayer</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">Constructor</td></tr></table><div class="detailBody"><code>public function VideoPlayer(_width:Number = 320, _height:Number = 240)</code><p></p><p>
+		 Constructor
+		 </p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">_width</span>:Number</code> (default = <code>320</code>)<code></code> &mdash; Video width
+		 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">_height</span>:Number</code> (default = <code>240</code>)<code></code> &mdash; Video height
+		 </td></tr></table></div><a name="methodDetail"></a><div class="detailSectionHeader">Method Detail</div><a name="clearVideo()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">clearVideo</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td></tr></table><div class="detailBody"><code> protected function clearVideo():void</code><p></p><p></p><p>
+		 
+		 </p></div><a name="connectStream()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">connectStream</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> protected function connectStream():void</code><p></p><p></p><p>
+		 
+		 </p></div><a name="destroy()"></a><a name="destroy(Object)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">destroy</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function destroy(_obj:Object = null):void</code><p></p><p></p><p> destroy VideoPlayer instance
+		  </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">_obj</span>:Object</code> (default = <code>null</code>)<code></code> &mdash;  destroy extra Object variable
+		  </td></tr></table></p><p><span class="label">See also</span></p><div class="seeAlso"><a href="VideoPlayer.html#init()" target="">init()</a></div></div><a name="init()"></a><a name="init(Object)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">init</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function init(_obj:Object = null):void</code><p></p><p></p><p> extra initialize Function.
+		  need to use override.
+		  </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">_obj</span>:Object</code> (default = <code>null</code>)<code></code> &mdash;  initialize extra Object variable
+		  </td></tr></table></p><p><span class="label">See also</span></p><div class="seeAlso"><a href="VideoPlayer.html#destroy()" target="">destroy()</a></div></div><a name="netConnectionHandler()"></a><a name="netConnectionHandler(flash.events.NetStatusEvent)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">netConnectionHandler</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> protected function netConnectionHandler(e:NetStatusEvent):void</code><p></p><p></p><p>
+		 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">e</span>:NetStatusEvent</code></td></tr></table></p></div><a name="netStreamHandler()"></a><a name="netStreamHandler(flash.events.NetStatusEvent)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">netStreamHandler</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> protected function netStreamHandler(e:NetStatusEvent):void</code><p></p><p></p><p>
+		 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">e</span>:NetStatusEvent</code></td></tr></table></p></div><a name="onMetaDataHandler()"></a><a name="onMetaDataHandler(Object)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">onMetaDataHandler</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> protected function onMetaDataHandler(_data:Object):void</code><p></p><p></p><p>
+		 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">_data</span>:Object</code></td></tr></table></p></div><a name="pause()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">pause</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function pause():void</code><p></p><p></p><p>
+		 pause Video File
+		 </p><p><span class="label">See also</span></p><div class="seeAlso"><a href="VideoPlayer.html#play()" target="">play()</a><br/><a href="VideoPlayer.html#stop()" target="">stop()</a></div></div><a name="play()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">play</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function play():void</code><p></p><p></p><p>
+		 play Video File
+		 </p><p><span class="label">See also</span></p><div class="seeAlso"><a href="VideoPlayer.html#pause()" target="">pause()</a><br/><a href="VideoPlayer.html#stop()" target="">stop()</a></div></div><a name="progressStatusCheckHandler()"></a><a name="progressStatusCheckHandler(flash.events.Event)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">progressStatusCheckHandler</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> protected function progressStatusCheckHandler(e:Event = null):void</code><p></p><p></p><p>
+		 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">e</span>:Event</code> (default = <code>null</code>)<code></code></td></tr></table></p></div><a name="seek()"></a><a name="seek(Number)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">seek</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function seek(_seekTime:Number):void</code><p></p><p></p><p>
+		 seek Video File's keyFrame 	(지정한 _seekTime과 가장 가까운 keyFrame의 검색)
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">_seekTime</span>:Number</code> &mdash; 	Video File에서 이동할 근사적인 시간(second) 값 
+		 </td></tr></table></p></div><a name="setMute()"></a><a name="setMute(Boolean)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">setMute</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function setMute(_flag_mute:Boolean = false):void</code><p></p><p></p><p>
+		 sound mute status setting
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">_flag_mute</span>:Boolean</code> (default = <code>false</code>)<code></code> &mdash; true 설정시 mute on, false 설정시 mute off
+		 </td></tr></table></p><p><span class="label">See also</span></p><div class="seeAlso"><a href="VideoPlayer.html#setVolume()" target="">setVolume()</a><br/><a href="VideoPlayer.html#setPan()" target="">setPan()</a></div></div><a name="setPan()"></a><a name="setPan(Number)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">setPan</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function setPan(_pan:Number):void</code><p></p><p></p><p>
+		 speaker sound panning setting
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">_pan</span>:Number</code> &mdash; 	-1 ~ 1 사이의 speaker panning value
+		 </td></tr></table></p><p><span class="label">See also</span></p><div class="seeAlso"><a href="VideoPlayer.html#setMute()" target="">setMute()</a><br/><a href="VideoPlayer.html#setVolume()" target="">setVolume()</a></div></div><a name="setURL()"></a><a name="setURL(String,Number,Boolean,Boolean,Boolean,Boolean)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">setURL</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function setURL(_videoURL:String, _bufferSecond:Number = 0.1, _smoothing:Boolean = false, _preventCache:Boolean = false, _preventAutoDownload:Boolean = false, _checkPolicyFile:Boolean = false):void</code><p></p><p></p><p>
+		 play시킬 Video File URL 및 play option setting
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">_videoURL</span>:String</code> &mdash; 			Video File(FLV, F4V, etc format) URL to play
+		 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">_bufferSecond</span>:Number</code> (default = <code>0.1</code>)<code></code> &mdash; 		Video buffer second (video File이 중단없이 재생되기 위한 stream buffer time)  
+		 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">_smoothing</span>:Boolean</code> (default = <code>false</code>)<code></code> &mdash; 		Video smoothing option
+		 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">_preventCache</span>:Boolean</code> (default = <code>false</code>)<code></code> &mdash; 		Video File load시에 cache data의 사용을 방지할 경우, true 설정(Local 위치에 존재하는 Video File 사용시, false 설정 필요)
+		 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">_preventAutoDownload</span>:Boolean</code> (default = <code>false</code>)<code></code> &mdash; Video File 자동 download 사용을 방지할 경우, true 설정
+		 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">_checkPolicyFile</span>:Boolean</code> (default = <code>false</code>)<code></code> &mdash; 	Video File load 시작 전, 서버로부터 crossdomain 정책 파일을 load해야 할지의 여부(swf 파일의 도메인 외부에서 Video File을 load하고 있으며, BitmapData.draw() 메서드를 사용하여 Video File에 pixel 수준으로 액세스해야 하는 경우입니다.)
+		 </td></tr></table></p></div><a name="setVolume()"></a><a name="setVolume(Number)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">setVolume</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function setVolume(_volume:Number):void</code><p></p><p></p><p>
+		 sound volume setting
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">_volume</span>:Number</code> &mdash; 0 ~ 1 사이의 sound volume
+		 </td></tr></table></p><p><span class="label">See also</span></p><div class="seeAlso"><a href="VideoPlayer.html#setMute()" target="">setMute()</a><br/><a href="VideoPlayer.html#setPan()" target="">setPan()</a></div></div><a name="stop()"></a><a name="stop(Boolean)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">stop</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function stop(_closeAutoDownload:Boolean = false):void</code><p></p><p></p><p>
+		 stop Video File
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">_closeAutoDownload</span>:Boolean</code> (default = <code>false</code>)<code></code> &mdash; Video File의 download를 정지시키고 video 이미지를 지울 경우, true 설정
+		 </td></tr></table></p><p><span class="label">See also</span></p><div class="seeAlso"><a href="VideoPlayer.html#play()" target="">play()</a><br/><a href="VideoPlayer.html#pause()" target="">pause()</a></div></div><div class="detailSectionHeader">Constant Detail</div><a name="constantDetail"></a><a name="ASYNC_ERROR"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">ASYNC_ERROR</td><td class="detailHeaderType">Constant</td></tr></table><div class="detailBody"><code>public static const ASYNC_ERROR:String = com.vwonderland.control.video.VideoPlayer.ASYNC_ERROR</code><p></p><p></p><p>
+		 기본 비동기 코드에서 비동기적으로 예외 발생시 전달되는 Event입니다. 서버가 정의되지 않은 클라이언트에 대한 메서드를 호출할 때 이 Event가 전달됩니다.
+		 </p><p> The default value is <code></code>.</p></div><a name="constantDetail"></a><a name="CHANGE_VIDEO_MODE"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">CHANGE_VIDEO_MODE</td><td class="detailHeaderType">Constant</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const CHANGE_VIDEO_MODE:String = com.vwonderland.control.video.VideoPlayer.CHANGE_VIDEO_MODE</code><p></p><p></p><p>
+		 Video mode(MODE_NONE, MODE_INIT, MODE_PLAY, MODE_PAUSE, MODE_STOP)의 변경시 발생하는 Event입니다.
+		 </p><p> The default value is <code></code>.</p></div><a name="constantDetail"></a><a name="CLEAR_VIDEO"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">CLEAR_VIDEO</td><td class="detailHeaderType">Constant</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const CLEAR_VIDEO:String = com.vwonderland.control.video.VideoPlayer.CLEAR_VIDEO</code><p></p><p></p><p>
+		 화면에 표시되는 video File의 image가 지워질 때 발생하는 Event입니다.
+		 </p><p> The default value is <code></code>.</p></div><a name="constantDetail"></a><a name="COMPLETE_LOAD_VIDEO"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">COMPLETE_LOAD_VIDEO</td><td class="detailHeaderType">Constant</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const COMPLETE_LOAD_VIDEO:String = com.vwonderland.control.video.VideoPlayer.COMPLETE_LOAD_VIDEO</code><p></p><p></p><p>
+		 Video File의  MetaData의 duration data 취득과 download 완료, 두 조건의 충족시 발생하는 Event입니다. 
+		 </p><p> The default value is <code></code>.</p></div><a name="constantDetail"></a><a name="FINISH_VIDEO"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">FINISH_VIDEO</td><td class="detailHeaderType">Constant</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const FINISH_VIDEO:String = com.vwonderland.control.video.VideoPlayer.FINISH_VIDEO</code><p></p><p></p><p>
+		 NetStatusEvent의 NetStream.Play.Stop info Code 출력시 발생하는 Event입니다.
+		 </p><p> The default value is <code></code>.</p></div><a name="constantDetail"></a><a name="MODE_INIT"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">MODE_INIT</td><td class="detailHeaderType">Constant</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const MODE_INIT:String = com.vwonderland.control.video.VideoPlayer.MODE_INIT</code><p></p><p></p><p>
+		 VIDEO MODE - VideoPlayer instance 생성 후, setURL Function 실행으로 play시킬 Video File URL이 할당된 상태
+		 </p><p> The default value is <code></code>.</p></div><a name="constantDetail"></a><a name="MODE_NONE"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">MODE_NONE</td><td class="detailHeaderType">Constant</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const MODE_NONE:String = com.vwonderland.control.video.VideoPlayer.MODE_NONE</code><p></p><p></p><p>
+		 VIDEO MODE - VideoPlayer instance 생성시 or destroy Function 실행 후
+		 </p><p> The default value is <code></code>.</p></div><a name="constantDetail"></a><a name="MODE_PAUSE"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">MODE_PAUSE</td><td class="detailHeaderType">Constant</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const MODE_PAUSE:String = com.vwonderland.control.video.VideoPlayer.MODE_PAUSE</code><p></p><p></p><p>
+		 VIDEO MODE - play Function이 정상적으로 수행된 후, pause Function이 정상적으로 수행된 상태
+		 </p><p> The default value is <code></code>.</p></div><a name="constantDetail"></a><a name="MODE_PLAY"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">MODE_PLAY</td><td class="detailHeaderType">Constant</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const MODE_PLAY:String = com.vwonderland.control.video.VideoPlayer.MODE_PLAY</code><p></p><p></p><p>
+		 VIDEO MODE - setURL Function 실행으로 play시킬 Video File URL이 할당된 후, play Function이 정상적으로 수행된 상태
+		 </p><p> The default value is <code></code>.</p></div><a name="constantDetail"></a><a name="MODE_STOP"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">MODE_STOP</td><td class="detailHeaderType">Constant</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const MODE_STOP:String = com.vwonderland.control.video.VideoPlayer.MODE_STOP</code><p></p><p></p><p>
+		 VIDEO MODE - play Function이 정상적으로 수행된 후, stop Function이 정상적으로 수행된 상태
+		 </p><p> The default value is <code></code>.</p></div><a name="constantDetail"></a><a name="NETCONNECTION_CONNECT_CLOSED"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">NETCONNECTION_CONNECT_CLOSED</td><td class="detailHeaderType">Constant</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const NETCONNECTION_CONNECT_CLOSED:String = com.vwonderland.control.video.VideoPlayer.NETCONNECTION_CONNECT_CLOSED</code><p></p><p></p><p>
+		 NetStatusEvent의 NetConnection.Connect.Closed info Code 출력시(Video File을 재생하기 위한 connection 연결이 성공적으로 종료된 경우) 발생하는 Event입니다.
+		 </p><p> The default value is <code></code>.</p></div><a name="constantDetail"></a><a name="NETCONNECTION_CONNECT_FAIL"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">NETCONNECTION_CONNECT_FAIL</td><td class="detailHeaderType">Constant</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const NETCONNECTION_CONNECT_FAIL:String = com.vwonderland.control.video.VideoPlayer.NETCONNECTION_CONNECT_FAIL</code><p></p><p></p><p>
+		 NetStatusEvent의 NetConnection.Connect.Failed info Code 출력시(Video File을 재생하기 위한 connection 연결 시도에 실패한 경우) 발생하는 Event입니다.
+		 </p><p> The default value is <code></code>.</p></div><a name="constantDetail"></a><a name="NETCONNECTION_CONNECT_REJECTED"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">NETCONNECTION_CONNECT_REJECTED</td><td class="detailHeaderType">Constant</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const NETCONNECTION_CONNECT_REJECTED:String = com.vwonderland.control.video.VideoPlayer.NETCONNECTION_CONNECT_REJECTED</code><p></p><p></p><p>
+		 NetStatusEvent의 NetConnection.Connect.Rejected info Code 출력시(Video File을 재생하기 위한 connection 연결 시도에  해당 프로그램에 대한 액세스 권한이 없을 경우) 발생하는 Event입니다.
+		 </p><p> The default value is <code></code>.</p></div><a name="constantDetail"></a><a name="NETSTREAM_BUFFER_EMPTY"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">NETSTREAM_BUFFER_EMPTY</td><td class="detailHeaderType">Constant</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const NETSTREAM_BUFFER_EMPTY:String = com.vwonderland.control.video.VideoPlayer.NETSTREAM_BUFFER_EMPTY</code><p></p><p></p><p>
+		 NetStatusEvent의 NetStream.Buffer.Empty info Code 출력시(buffer를 채우기에 충분할만큼 신속하게 data가 수신되지 않을 경우이며, NETSTREAM_BUFFER_FULL Event를 추가로 발생시키고 buffer가 채워질 때까지 데이터 흐름을 중단) 발생하는 Event입니다.
+		 </p><p> The default value is <code></code>.</p></div><a name="constantDetail"></a><a name="NETSTREAM_BUFFER_FLUSH"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">NETSTREAM_BUFFER_FLUSH</td><td class="detailHeaderType">Constant</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const NETSTREAM_BUFFER_FLUSH:String = com.vwonderland.control.video.VideoPlayer.NETSTREAM_BUFFER_FLUSH</code><p></p><p></p><p>
+		 NetStatusEvent의 NetStream.Buffer.Flush info Code 출력시(data의 stream이 완료되어 남아 있는 buffer가 비워질 경우) 발생하는 Event입니다.
+		 </p><p> The default value is <code></code>.</p></div><a name="constantDetail"></a><a name="NETSTREAM_BUFFER_FULL"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">NETSTREAM_BUFFER_FULL</td><td class="detailHeaderType">Constant</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const NETSTREAM_BUFFER_FULL:String = com.vwonderland.control.video.VideoPlayer.NETSTREAM_BUFFER_FULL</code><p></p><p></p><p>
+		 NetStatusEvent의 NetStream.Buffer.Empty info Code 출력시(buffer가 채워지고 stream이 Video File의 재생을 시작할 경우) 발생하는 Event입니다.
+		 </p><p> The default value is <code></code>.</p></div><a name="constantDetail"></a><a name="NETSTREAM_NOT_FOUND"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">NETSTREAM_NOT_FOUND</td><td class="detailHeaderType">Constant</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const NETSTREAM_NOT_FOUND:String = com.vwonderland.control.video.VideoPlayer.NETSTREAM_NOT_FOUND</code><p></p><p></p><p>
+		 NetStatusEvent의 NetStream.Play.StreamNotFound info Code 출력시(play Function 실행 후, 재생할 video File을 찾을 수 없을 경우) 발생하는 Event입니다 
+		 </p><p> The default value is <code></code>.</p></div><a name="constantDetail"></a><a name="NETSTREAM_PLAY_NOSUPPORTEDTRACKFOUND"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">NETSTREAM_PLAY_NOSUPPORTEDTRACKFOUND</td><td class="detailHeaderType">Constant</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const NETSTREAM_PLAY_NOSUPPORTEDTRACKFOUND:String = com.vwonderland.control.video.VideoPlayer.NETSTREAM_PLAY_NOSUPPORTEDTRACKFOUND</code><p></p><p></p><p>
+		 NetStatusEvent의 NetStream.Play.NoSupportedTrackFound info Code 출력시(setURL Function으로 할당된 File이 재생 불가능한 File일 경우) 발생하는 Event입니다.
+		 </p><p> The default value is <code></code>.</p></div><a name="constantDetail"></a><a name="NETSTREAM_SEEK_INVALIDTIME"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">NETSTREAM_SEEK_INVALIDTIME</td><td class="detailHeaderType">Constant</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const NETSTREAM_SEEK_INVALIDTIME:String = com.vwonderland.control.video.VideoPlayer.NETSTREAM_SEEK_INVALIDTIME</code><p></p><p></p><p>
+		 NetStatusEvent의 NetStream.Seek.InvalidTime info Code 출력시(seek Function을 이용한 Video File의 keyFrame 검색시, 현재까지 download된 Video data의 끝 부분을 지나서 검색 or 재생하려고 했을 경우) 발생하는 Event입니다.
+		 </p><p> The default value is <code></code>.</p></div><a name="constantDetail"></a><a name="NETSTREAM_SEEK_NOTIFY"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">NETSTREAM_SEEK_NOTIFY</td><td class="detailHeaderType">Constant</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const NETSTREAM_SEEK_NOTIFY:String = com.vwonderland.control.video.VideoPlayer.NETSTREAM_SEEK_NOTIFY</code><p></p><p></p><p>
+		 NetStatusEvent의 NetStream.Seek.Notify info Code 출력시(seek Function을 이용한 Video File의 keyFrame 검색이 완료되었을 경우) 발생하는 Event입니다.
+		 </p><p> The default value is <code></code>.</p></div><a name="constantDetail"></a><a name="PROGRESS_LOAD_VIDEO"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">PROGRESS_LOAD_VIDEO</td><td class="detailHeaderType">Constant</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const PROGRESS_LOAD_VIDEO:String = com.vwonderland.control.video.VideoPlayer.PROGRESS_LOAD_VIDEO</code><p></p><p></p><p>
+		 Video File의 download 진행시 발생하는 Event입니다.
+		 </p><p> The default value is <code></code>.</p></div><a name="constantDetail"></a><a name="READY_VIDEO_METADATA"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">READY_VIDEO_METADATA</td><td class="detailHeaderType">Constant</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const READY_VIDEO_METADATA:String = com.vwonderland.control.video.VideoPlayer.READY_VIDEO_METADATA</code><p></p><p></p><p>
+		 setURL Function 실행 후, Video File의 MetaData의 duration data 취득시 발생하는 Event입니다.
+		 </p><p> The default value is <code></code>.</p></div><a name="constantDetail"></a><a name="START_VIDEO"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">START_VIDEO</td><td class="detailHeaderType">Constant</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const START_VIDEO:String = com.vwonderland.control.video.VideoPlayer.START_VIDEO</code><p></p><p></p><p>
+		 NetStatusEvent의 NetStream.Play.Start info Code 출력시 발생하는 Event입니다.
+		 </p><p> The default value is <code></code>.</p></div><a name="includeExamplesSummary"></a><div class="detailSectionHeader">Examples</div><div class="detailBody">Basic usage:<div class="listing" version="3.0"><pre>
+    private var prevVideoModeStr:String;
+    private var flag_ongoingSeek:Boolean = false; //seek video process 진행중 여부
+    private var flag_pressProgressBtn:Boolean = false; //progressBtn Mouse press 상태여부
+    private var videoProgressPercentage:Number = 0;
+    
+    //instance
+    private var _player:VideoPlayer;
+    
+    private var _progressBarBg:Sprite;
+    private var _downloadBar:Sprite;
+    private var _progressBtn:Sprite;
+    private var _progressSeekSlider:SliderHorizontal;
+    
+    private var _playPauseTF:TextField;
+    private var _stopTF:TextField;
+    
+    private var _volumeBarBg:Sprite;
+    private var _volumeBtn:Sprite;
+    private var _volumeSlider:SliderHorizontal;
+    
+    private var _panBarBg:Sprite;
+    private var _panBtn:Sprite;
+    private var _panSlider:SliderHorizontal;
+    
+    private var _timeTF:TextField;
+    private var _downloadTimeTF:TextField;
+    private var _durationTimeTF:TextField;
+    
+    private var _muteTF:TextField;
+    private var _fullScreenViewTF:TextField;
+    private var _playOtherVideoTF:TextField;
+    
+    private var _progressCheckTimer:SimpleTimer;
+    private var _userInteractionBlock:Sprite;
+    
+    public function TestVideoPlayer():void {
+        //VideoPlayer instance setting
+        _player = new VideoPlayer(320, 240);
+        this.addChild(_player);
+        
+        _player.addEventListener(VideoPlayer.READY_VIDEO_METADATA, videoStatusHandler); //Video File의 MetaData의 duration data 취득시
+        _player.addEventListener(VideoPlayer.FINISH_VIDEO, videoStatusHandler);            //Video File의 재생 완료시
+        _player.addEventListener(VideoPlayer.START_VIDEO, videoStatusHandler);            //Video File의 재생 시작시
+        
+        _player.addEventListener(VideoPlayer.NETSTREAM_NOT_FOUND, netStreamHandler);     //재생할 video File을 찾을 수 없을 경우
+        _player.addEventListener(VideoPlayer.NETSTREAM_BUFFER_EMPTY, netStreamHandler);    //버퍼를 채우기에 충분할 만큼 신속하게 데이터가 수신되지 않습니다.
+        _player.addEventListener(VideoPlayer.NETSTREAM_BUFFER_FULL, netStreamHandler);    //버퍼가 채워지고 스트림이 재생을 시작합니다.
+        _player.addEventListener(VideoPlayer.NETSTREAM_BUFFER_FLUSH, netStreamHandler);    //데이터의 스트림이 완료되었고 남아 있는 버퍼가 비워집니다.
+        
+        _player.setURL("http://www.v-wonderland.com/flv/serverFLV.f4v", 5, true, true, false); //Server File
+        //_player.setURL("../flv/localFLV.flv", 5, true, false, false); //Local File
+        // 1. setURL - _preventAutoDownload = false일 경우, netStream open 상태입니다. Video File download가 시작됩니다.
+        // 2. setURL - _preventAutoDownload = true일 경우, netStream close 상태입니다. _player.play() 실행 시점부터 video File download & play가 시작됩니다.
+        
+        //VideoPlayer Control Button Setting
+        _playPauseTF = TextFieldUtil.makeTF(50, 15, "dotum", 11, 0x000000, false, false, false, false, 0, 0, 0, 0, TextFormatAlign.CENTER);
+        _playPauseTF.border = true;
+        _playPauseTF.text = "PLAY";
+        _playPauseTF.y = 270;
+        _playPauseTF.addEventListener(MouseEvent.CLICK, _playPauseTFMouseInteraction);
+        this.addChild(_playPauseTF);
+        
+        _stopTF = TextFieldUtil.makeTF(50, 15, "dotum", 11, 0x000000, false, false, false, false, 0, 0, 0, 0, TextFormatAlign.CENTER);
+        _stopTF.border = true;
+        _stopTF.text = "STOP";
+        _stopTF.x = 50;
+        _stopTF.y = 270;
+        _stopTF.addEventListener(MouseEvent.CLICK, _stopTFMouseInteraction);
+        this.addChild(_stopTF);
+        
+        //ProgressBarBg & download Bar & progress seek Btn setting
+        _progressBarBg = SimpleRect.drawRectSprite(320, 10, 0xcccccc);
+        _progressBarBg.y = 245;
+        this.addChild(_progressBarBg);
+        
+        _downloadBar = SimpleRect.drawRectSprite(320, 10, 0xff9000);
+        _downloadBar.width = 0;
+        _downloadBar.y = 245;
+        this.addChild(_downloadBar);
+        
+        _progressBtn = SimpleRect.drawRectSprite(10, 10, 0xff0000);
+        _progressBtn.y = 245;
+        this.addChild(_progressBtn);
+        
+        //Time display Setting
+        _timeTF = TextFieldUtil.makeTF(50, 15, "dotum", 11, 0x000000, false, false, false, false, 0, 0, 0, 0, TextFormatAlign.CENTER);
+        _timeTF.border = true;
+        _timeTF.y = 300;
+        _timeTF.text = "00:00";
+        this.addChild(_timeTF);
+        
+        _downloadTimeTF = TextFieldUtil.makeTF(50, 15, "dotum", 11, 0x000000, false, false, false, false, 0, 0, 0, 0, TextFormatAlign.CENTER);
+        _downloadTimeTF.border = true;
+        _downloadTimeTF.y = 315;
+        _downloadTimeTF.text = "00:00";
+        this.addChild(_downloadTimeTF);
+        
+        _durationTimeTF = TextFieldUtil.makeTF(50, 15, "dotum", 11, 0x000000, false, false, false, false, 0, 0, 0, 0, TextFormatAlign.CENTER);
+        _durationTimeTF.border = true;
+        _durationTimeTF.y = 330;
+        _durationTimeTF.text = "00:00";
+        this.addChild(_durationTimeTF);
+        
+        //sound mute control Button Setting
+        _muteTF = TextFieldUtil.makeTF(100, 15, "dotum", 11, 0x000000, false, false, false, false, 0, 0, 0, 0, TextFormatAlign.CENTER);
+        _muteTF.border = true;
+        _muteTF.text = "SOUND OFF";
+        _muteTF.x = 220;
+        _muteTF.y = 300;
+        _muteTF.addEventListener(MouseEvent.CLICK, _muteTFMouseInteraction);
+        this.addChild(_muteTF);
+        
+        //fullScreen Button Setting
+        _fullScreenViewTF = TextFieldUtil.makeTF(100, 15, "dotum", 11, 0x000000, false, false, false, false, 0, 0, 0, 0, TextFormatAlign.CENTER);
+        _fullScreenViewTF.text = "FULL BROWSER";
+        _fullScreenViewTF.border = true;
+        _fullScreenViewTF.x = 220;
+        _fullScreenViewTF.y = 315;
+        _fullScreenViewTF.addEventListener(MouseEvent.CLICK, _fullScreenViewTFMouseInteraction);
+        this.addChild(_fullScreenViewTF);
+        
+        //Volume control Button Setting
+        _volumeBarBg = SimpleRect.drawRectSprite(100, 10, 0xcccccc);
+        _volumeBarBg.x = 220;
+        _volumeBarBg.y = 270;
+        this.addChild(_volumeBarBg);
+        
+        _volumeBtn = SimpleRect.drawRectSprite(10, 10, 0xff0000);
+        _volumeBtn.x = 220;
+        _volumeBtn.y = 270;
+        this.addChild(_volumeBtn);
+        
+        //Sound panning control Button Setting;
+        _panBarBg = SimpleRect.drawRectSprite(100, 10, 0xcccccc);
+        _panBarBg.x = 220;
+        _panBarBg.y = 285;
+        this.addChild(_panBarBg);
+        
+        _panBtn = SimpleRect.drawRectSprite(10, 10, 0x000000);
+        _panBtn.x = 220;
+        _panBtn.y = 285;
+        this.addChild(_panBtn);
+            
+        //playOtherVideo Button Setting
+        _playOtherVideoTF = TextFieldUtil.makeTF(100, 26, "dotum", 11, 0x000000, false, true, true, false, 0, 0, 0, 0, TextFormatAlign.CENTER);
+        _playOtherVideoTF.border = true;
+        _playOtherVideoTF.text = "PLAY OTHER FILE";
+        _playOtherVideoTF.x = 220;
+        _playOtherVideoTF.y = 330;
+        _playOtherVideoTF.addEventListener(MouseEvent.CLICK, _playOtherVideoTFMouseInteraction);
+        this.addChild(_playOtherVideoTF);
+        
+        //progress seek slider, volume control slider, sound panning control slider setting
+        _progressSeekSlider = new SliderHorizontal(this.stage, _progressBtn, _progressBarBg.x, _progressBarBg.y, _progressBarBg.width - _progressBtn.width, 0, true);
+        _progressSeekSlider.addEventListener(SliderBase.PRESS_SLIDER, sliderMouseInteraction);
+        _progressSeekSlider.addEventListener(SliderBase.DRAG_SLIDER, sliderMouseInteraction);
+        _progressSeekSlider.addEventListener(SliderBase.RELEASE_SLIDER, sliderMouseInteraction);
+        
+        _volumeSlider = new SliderHorizontal(this.stage, _volumeBtn, 220, 270, _volumeBarBg.width - _volumeBtn.width, 1, true);
+        _volumeSlider.addEventListener(SliderBase.DRAG_SLIDER, volumeSliderMouseInteraction);
+        _volumeSlider.addEventListener(SliderBase.RELEASE_SLIDER, volumeSliderMouseInteraction);
+        
+        _panSlider = new SliderHorizontal(this.stage, _panBtn, 220, 285, _panBarBg.width - _panBtn.width, 1, true);
+        _panSlider.addEventListener(SliderBase.DRAG_SLIDER, panSliderMouseInteraction);
+        _panSlider.addEventListener(SliderBase.RELEASE_SLIDER, panSliderMouseInteraction);
+        
+        //progress check timer setting
+        setProgressCheckTimer();
+        
+        //user interaction Block Setting
+        _userInteractionBlock = SimpleRect.drawRectSprite(this.stage.stageWidth, this.stage.stageHeight, 0x000000, 0.5);
+        this.addChild(_userInteractionBlock);
+        setUserInteractionBlock(true);
+        
+        //set sound volume : 0 ~ 1
+        _volumeSlider.percentage = 0.5;
+        _player.setVolume(_volumeSlider.percentage); 
+        
+        //set speaker sound panning : -1 ~ 1
+        _panSlider.percentage = 0.5;
+        _player.setPan(changeSliderPercentageToPanValue(_panSlider.percentage)); //_panSlider percentage value (0 ~ 1) to pan value (-1 ~ 1)
+    }
+    
+    private function setUserInteractionBlock(_flag_block:Boolean):void {
+        _userInteractionBlock.visible = _flag_block;
+    }
+    
+    private function setInteractionInstance():void {
+        trace("metadata duration 취득 완료. _progressSeekSlider, _volumeSlider의 slider mouse interaction 허용");
+        setUserInteractionBlock(false);
+    }
+    
+    private function seek(_seekTime:Number):void {
+        flag_ongoingSeek = true;
+        _player.seek(_seekTime);
+    }
+    
+    private function _playOtherVideoTFMouseInteraction(e:MouseEvent):void {
+        switch(e.type) {
+            case MouseEvent.CLICK :
+                flag_ongoingSeek = false;
+                flag_pressProgressBtn = false;
+                
+                _player.setURL("http://www.v-wonderland.com/flv/serverOtherFLV.flv", 5, true, true, false);
+                _player.play();
+                _playPauseTF.text = "PAUSE";
+                
+                setProgressCheckTimer();
+                _progressSeekSlider.makeMouseInteraction();
+                setUserInteractionBlock(true);
+            break;
+        }
+    }
+    
+    private function _playPauseTFMouseInteraction(e:MouseEvent):void {
+        switch(e.type) {
+            case MouseEvent.CLICK :
+                if(_player.mode != VideoPlayer.MODE_PLAY) {
+                    _player.play();
+                    _playPauseTF.text = "PAUSE";
+                } else {
+                    _player.pause();
+                    _playPauseTF.text = "PLAY";
+                }
+                break;
+        }
+    }
+    
+    private function _stopTFMouseInteraction(e:MouseEvent):void {
+        switch(e.type) {
+            case MouseEvent.CLICK :
+                if(_player.mode != VideoPlayer.MODE_STOP) {
+                    flag_ongoingSeek = false;
+                    _player.stop(); 
+                    //1. stop() - continue download video File  
+                    //2. stop(true) - close download video File & clear video
+                }
+                _playPauseTF.text = "PLAY";
+                break;
+        }
+    }
+    
+    private function _muteTFMouseInteraction(e:MouseEvent):void {
+        switch(e.type) {
+            case MouseEvent.CLICK :
+                if(_player.muteStatus){ //MUTE ON -&gt; MUTE OFF
+                    _player.setMute(false);
+                    _muteTF.text = "SOUND OFF";
+                }else{
+                    _player.setMute(true); //MUTE OFF -&gt; MUTE ON
+                    _muteTF.text = "SOUND ON";
+                }
+                break;
+        }
+    }
+    
+    private function setProgressCheckTimer():void {
+        removeProgressCheckTimer();
+        _progressCheckTimer = new SimpleTimer(10, this, progressCheckTimerHandler);
+        _progressCheckTimer.start();
+    }
+    
+    private function removeProgressCheckTimer():void {
+        if(_progressCheckTimer != null) {
+            _progressCheckTimer.stop();
+            _progressCheckTimer.destroy();
+            _progressCheckTimer = null;
+        }
+    }
+    
+    private function progressCheckTimerHandler():void {
+        //display time, downloadTime, durationTime
+        var timeInfoArr:Array = SystemUtil.secondUnitToHourUnit(_player.time); //hour, minute, second
+        var downloadInfoArr:Array = SystemUtil.secondUnitToHourUnit(_player.downloadTime); //hour, minute, second
+        var durationInfoArr:Array = SystemUtil.secondUnitToHourUnit(_player.duration); //hour, minute, second
+        _timeTF.text = String(StringUtil.intToCipherStr(timeInfoArr[1], 2) + ":" + StringUtil.intToCipherStr(timeInfoArr[2], 2));
+        _downloadTimeTF.text = String(StringUtil.intToCipherStr(downloadInfoArr[1], 2) + ":" + StringUtil.intToCipherStr(downloadInfoArr[2], 2));
+        _durationTimeTF.text = String(StringUtil.intToCipherStr(durationInfoArr[1], 2) + ":" + StringUtil.intToCipherStr(durationInfoArr[2], 2));
+        
+        //display downloadBar
+        _downloadBar.width = _progressBarBg.width * _player.downloadPercentage; 
+        
+        //Video progress 검색 중이 아니라면, _progressSeekSlider percentage 변경, _progressBtn의 x position 변경
+        if(!flag_ongoingSeek) _progressSeekSlider.percentage = _player.progressPercentage;
+        
+        //Video File의 현재까지의 download percentage 파악, _progressBtn의 drag 가능한 범위 변경
+        if(_progressSeekSlider != null) {
+            var restrictDragDistance:Number = Math.floor((_progressBarBg.width - _progressBtn.width) * MathUtil.ceilUnit(_player.downloadPercentage, 0.01));
+            _progressSeekSlider.restrictDragDistance(restrictDragDistance);
+        }
+    }
+    
+    private function sliderMouseInteraction(e:Event):void {
+        switch(e.type) {
+            case SliderBase.PRESS_SLIDER :
+                prevVideoModeStr = _player.mode;
+                flag_pressProgressBtn = true;
+                flag_ongoingSeek = true;
+                
+                _player.pause();
+            break;    
+            
+            case SliderBase.DRAG_SLIDER :
+                _player.seek(_progressSeekSlider.percentage * _player.duration);
+            break;
+            
+            case SliderBase.RELEASE_SLIDER :
+                flag_pressProgressBtn = false;
+                _player.seek(_progressSeekSlider.percentage * _player.duration);
+                
+                switch(prevVideoModeStr) {
+                    case VideoPlayer.MODE_NONE :
+                    break;
+                    
+                    case VideoPlayer.MODE_INIT :
+                    break;
+                    
+                    case VideoPlayer.MODE_PLAY :
+                        _player.play();
+                    break;    
+                    
+                    case VideoPlayer.MODE_PAUSE :
+                    break;
+                    
+                    case VideoPlayer.MODE_STOP :
+                    break;
+                }
+            break;
+        }
+    }
+    
+    private function netStreamHandler(e:Event):void {
+        switch(e.type) {
+            case VideoPlayer.NETSTREAM_BUFFER_EMPTY :
+                //trace("NETSTREAM_BUFFER_EMPTY");
+            break;
+            
+            case VideoPlayer.NETSTREAM_BUFFER_FULL : //progressBtn release + ongoing seek video
+                if(flag_pressProgressBtn == false && flag_ongoingSeek == true) flag_ongoingSeek = false;
+            break;
+            
+            case VideoPlayer.NETSTREAM_BUFFER_FLUSH : //progressBtn release + ongoing seek video
+                if(flag_pressProgressBtn == false && flag_ongoingSeek == true) flag_ongoingSeek = false;
+            break;
+            
+            case VideoPlayer.NETSTREAM_NOT_FOUND : //require change control UI & display UI
+                removeProgressCheckTimer();
+                _progressSeekSlider.removeMouseInteraction();
+            break;
+        }
+    }
+    
+    private function videoStatusHandler(e:Event):void {
+        switch(e.type) {
+            case VideoPlayer.READY_VIDEO_METADATA :
+                setInteractionInstance();
+            break;
+            
+            case VideoPlayer.FINISH_VIDEO :
+                if(flag_pressProgressBtn) return;
+                
+                //_player.stop(true); //close download Video File 
+                _player.stop(); //continue download Video File
+                _playPauseTF.text = "PLAY";
+            break;    
+            
+            case VideoPlayer.START_VIDEO :
+                //
+            break;
+        }
+    }
+    
+    private function volumeSliderMouseInteraction(e:Event):void {
+        switch(e.type) {
+            case SliderBase.DRAG_SLIDER :
+                _player.setVolume(_volumeSlider.percentage);
+            break;
+            
+            case SliderBase.RELEASE_SLIDER :
+                _player.setVolume(_volumeSlider.percentage);
+            break;
+        }
+    }
+    
+    private function panSliderMouseInteraction(e:Event):void {
+        switch(e.type) {
+            case SliderBase.DRAG_SLIDER :
+                _player.setPan(changeSliderPercentageToPanValue(_panSlider.percentage));
+                break;
+            
+            case SliderBase.RELEASE_SLIDER :
+                _player.setPan(changeSliderPercentageToPanValue(_panSlider.percentage));
+                break;
+        }
+    }
+    
+    private function changeSliderPercentageToPanValue(_panSliderPercentage:Number):Number {
+        var targetNumber:Number = 0;
+        targetNumber = _panSliderPercentage * 2 - 1; //_panSlider percentage value (0 ~ 1) to pan value (-1 ~ 1)
+        return targetNumber;
+    }
+    
+    private function _fullScreenViewTFMouseInteraction(e:MouseEvent):void {
+        switch(e.type) {
+            case MouseEvent.CLICK :
+                var screenRectangle:Rectangle = new Rectangle(_player.x, _player.y, 320, 240);
+                stage.fullScreenSourceRect = screenRectangle;
+                stage.displayState = StageDisplayState.FULL_SCREEN;
+            break;
+        }
+    }
+        </pre></div>
+	 </div><br/><br/><hr><br/><p></p><center class="copyright"><footer></footer><br/>Tue Jan 22 2013, 02:21 AM +09:00  </center></div></body></html><!--<br/>Tue Jan 22 2013, 02:21 AM +09:00  -->

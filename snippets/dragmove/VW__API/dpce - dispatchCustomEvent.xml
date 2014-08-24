@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<snippet filetemplate="false" extension="cfm">
+<name>dpce - dispatchCustomEvent</name>
+<help>dpce - dispatchCustomEvent</help>
+<starttext><![CDATA[var paramObj:* = new Object();
+paramObj.index = ]]></starttext>
+<endtext><![CDATA[;
+dispatchEvent(new CustomEvent(EventName, paramObj));]]></endtext>
+</snippet>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<snippet filetemplate="false" extension="cfm">
+<name>twaa - TweenMax_to_autoAlpha</name>
+<help>twaa - TweenMax_to_autoAlpha</help>
+<starttext><![CDATA[TweenMax.to(]]></starttext>
+<endtext><![CDATA[, 0.5, {autoAlpha:1, ease:Quint.easeOut} );]]></endtext>
+</snippet>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<snippet filetemplate="false" extension="cfm">
+<name>td - TweenMax_delayedCall</name>
+<help>td - TweenMax.delayedCall</help>
+<starttext><![CDATA[TweenMax.delayedCall(]]></starttext>
+<endtext><![CDATA[1, functionName, [param]);]]></endtext>
+</snippet>

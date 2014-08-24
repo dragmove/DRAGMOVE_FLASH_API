@@ -1,0 +1,298 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"><!-- saved from url=(0014)about:internet --><html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link rel="stylesheet" href="../../../style.css" type="text/css" media="screen"><link rel="stylesheet" href="../../../print.css" type="text/css" media="print"><link rel="stylesheet" href="../../../override.css" type="text/css"><meta name="keywords" content="MathUtil,com.vwonderland.support.MathUtil,abs,average,breakCharacterStr,breakSetenceStr,ceilUnit,checkEmail,checkJumin,cutStrByIndex,degreeToRadian,drawConnectedCloseCurve,drawConnectedOpenCurve,floorUnit,getAngleBasedOnSystem,getAngleFromTriangleSide,getArrangedArrByElementNumberTypeProperty,getCloneArray,getCrossPointBetweenTwoPointsLineAndSomePoint,getDistanceBetweenTwoPoints,getDivisibleMinPrimeNumberUnderOneHundred,getFlagEnglishStr,getFlagEvenInt,getFlagPositiveNumber,getMaxNumberByArr,getMaxNumberPositionByArr,getMinNumberByArr,getMinNumberPositionByArr,getNearArrayPositionByValue,getNearArrayValueByValue,getNodesArrayByAttribute,getPercentagePointBetweenTwoPoints,getRandomIntMinToMax,getRandomNumberMinToMax,getRandomPositiveNegative,getRandomSurroundPoint,getRemapValue,getRotatedPointAroundStandardPoint,intToCipherStr,numberToPriceStr,radianToDegree,randomCeilInt,randomSort,removeWhiteSpaceStr,replaceStr,roundUnit,setVectorX,setVectorY,sum,trim"><title>com.vwonderland.support.MathUtil</title></head><body><script language="javascript" type="text/javascript" src="../../../asdoc.js"></script><script language="javascript" type="text/javascript" src="../../../help.js"></script><script language="javascript" type="text/javascript" src="../../../cookies.js"></script><script language="javascript" type="text/javascript"><!--
+				asdocTitle = 'MathUtil - API Documentation';
+				var baseRef = '../../../';
+				window.onload = configPage;
+			--></script>
+<script type="text/javascript">
+			scrollToNameAnchor();
+		</script><table class="titleTable" cellpadding="0" cellspacing="0" id="titleTable" style="display:none"><tr><td class="titleTableTitle" align="left">API Documentation</td><td class="titleTableTopNav" align="right"><a href="../../../package-summary.html" onclick="loadClassListFrame('../../../all-classes.html')">All Packages</a>&nbsp;|&nbsp;<a href="../../../class-summary.html" onclick="loadClassListFrame('../../../all-classes.html')">All Classes</a>&nbsp;|&nbsp;<a href="../../../all-index-A.html" onclick="loadClassListFrame('../../../index-list.html')">Index</a>&nbsp;|&nbsp;<a id="framesLink1" href="../../../index.html?com/vwonderland/support/MathUtil.html&amp;com/vwonderland/support/class-list.html">Frames</a><a id="noFramesLink1" style="display:none" href="" onclick="parent.location=document.location"> No Frames </a></td><td class="titleTableLogo" align="right" rowspan="3"><img src="../../../images/logo.jpg" class="logoImage" alt=" Adobe Logo " title=" Adobe Logo "></td></tr><tr class="titleTableRow2"><td class="titleTableSubTitle" id="subTitle" align="left">MathUtil</td><td class="titleTableSubNav" id="subNav" align="right"><a href="#methodSummary">Methods</a></td></tr><tr class="titleTableRow3"><td colspan="3">&nbsp;</td></tr></table><script language="javascript" type="text/javascript" xml:space="preserve">
+				<!--
+				
+					if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("MathUtil"); titleBar_setSubNav(false,false,false,false,false,false,false,false,true,false,false	,false,false,false,false,false);}	
+				-->
+			</script><div xmlns:fn="http://www.w3.org/2005/xpath-functions" class="MainContent"><table class="classHeaderTable" cellpadding="0" cellspacing="0"><tr><td class="classHeaderTableLabel">Package</td><td><a href="package-detail.html" onclick="javascript:loadClassListFrame('class-list.html')">com.vwonderland.support</a></td></tr><tr><td class="classHeaderTableLabel">Class</td><td class="classSignature">public  class  MathUtil</td></tr><tr><td class="classHeaderTableLabel">Inheritance</td><td class="inheritanceList">MathUtil  <img src="../../../images/inherit-arrow.gif" title="Inheritance" alt="Inheritance" class="inheritArrow"> Object</td></tr></table><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b> Language Version :&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b> Since :&nbsp;</b></td><td>15.07.2010</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b> Runtime Versions :&nbsp;</b></td><td>AIR 1.0, Flash Player  9.0</td></tr></table><p></p><p></p><p></p>
+	 static Math Utils
+	 <p></p><br/><hr></div><a name="methodSummary"></a><div class="summarySection"><div class="summaryTableTitle">Public Methods </div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableMethod"><tr><th>&nbsp;</th><th colspan="2">Method</th><th class="summaryTableOwnerCol">Defined By</th></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#abs()" class="signatureLink">abs</a>(_number:Number):Number</div><div class="summaryTableDescription">[static] 
+		 Fast speed abs function.</div></td><td class="summaryTableOwnerCol">MathUtil</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#average()" class="signatureLink">average</a>(... args):Number</div><div class="summaryTableDescription">[static] 
+		 parameter로 전달되는 모든 Number의 평균을 반환
+		 </div></td><td class="summaryTableOwnerCol">MathUtil</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#ceilUnit()" class="signatureLink">ceilUnit</a>(_number:Number, _roundToInterval:Number = 1):Number</div><div class="summaryTableDescription">[static] 
+		 Number value를  Ceil 연산을 적용, 특정 10 단위 or 특정 소수점 단위로 변환하여 반환  
+		 </div></td><td class="summaryTableOwnerCol">MathUtil</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#degreeToRadian()" class="signatureLink">degreeToRadian</a>(_degree:Number):Number</div><div class="summaryTableDescription">[static] 
+		 호도각 value를 radian value로 변환 출력
+		 </div></td><td class="summaryTableOwnerCol">MathUtil</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#drawConnectedCloseCurve()" class="signatureLink">drawConnectedCloseCurve</a>(_pointArr:Array, _canvasSprite:Sprite, _lineThickness:Number, _lineColor:uint = 0, _lineAlpha:Number = 1.0):void</div><div class="summaryTableDescription">[static] 
+		 drawConnectedOpenCurve Function의 기능과 동일하나, line의 시작점과 끝점이 연결된 밀폐된 line을 그립니다.</div></td><td class="summaryTableOwnerCol">MathUtil</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#drawConnectedOpenCurve()" class="signatureLink">drawConnectedOpenCurve</a>(_pointArr:Array, _canvasSprite:Sprite, _lineThickness:Number, _lineColor:uint = 0, _lineAlpha:Number = 1.0):void</div><div class="summaryTableDescription">[static] 
+		 curveTo를 이용해 그리는 line은 point가 3개 필요합니다.</div></td><td class="summaryTableOwnerCol">MathUtil</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#floorUnit()" class="signatureLink">floorUnit</a>(_number:Number, _roundToInterval:Number = 1):Number</div><div class="summaryTableDescription">[static] 
+		 Number value를  floor 연산을 적용, 특정 10 단위 or 특정 소수점 단위로 변환하여 반환 
+		 </div></td><td class="summaryTableOwnerCol">MathUtil</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#getAngleBasedOnSystem()" class="signatureLink">getAngleBasedOnSystem</a>(_degree:Number):Number</div><div class="summaryTableDescription">[static] 
+		 특정 각도를 Flash System의 각도 단위인 -179 ~ 180 으로 변화하여 반환
+		 </div></td><td class="summaryTableOwnerCol">MathUtil</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#getAngleFromTriangleSide()" class="signatureLink">getAngleFromTriangleSide</a>(_ySideWidth:Number, _xSideWidth:Number):Number</div><div class="summaryTableDescription">[static] 
+		 직각 삼각형의 직각을 이루는 두 변의 길이를 이용하여, 나머지 한 변이 밑변과 이루는 각도 출력
+		 </div></td><td class="summaryTableOwnerCol">MathUtil</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#getCrossPointBetweenTwoPointsLineAndSomePoint()" class="signatureLink">getCrossPointBetweenTwoPointsLineAndSomePoint</a>(_somePoint:Point, _linePoint_1:Point, _linePoint_2:Point):Point</div><div class="summaryTableDescription">[static] 
+		 linePoint_1 과 linePoint_2를 지나는 직선 상의, somePoint가 직교하는 Point를 반환.</div></td><td class="summaryTableOwnerCol">MathUtil</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#getDistanceBetweenTwoPoints()" class="signatureLink">getDistanceBetweenTwoPoints</a>(_point1_x:Number, _point1_y:Number, _point2_x:Number, _point2_y:Number):Number</div><div class="summaryTableDescription">[static] 
+		 두 point 사이의 거리 반환
+		 </div></td><td class="summaryTableOwnerCol">MathUtil</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#getDivisibleMinPrimeNumberUnderOneHundred()" class="signatureLink">getDivisibleMinPrimeNumberUnderOneHundred</a>(_number:uint):int</div><div class="summaryTableDescription">[static] 
+		 int value를 나눌 수 있는 100 미만의 최소 소수 반환(100 미만의 소수로 나눌 수 없을 경우, -1 반환)
+		 </div></td><td class="summaryTableOwnerCol">MathUtil</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#getFlagEvenInt()" class="signatureLink">getFlagEvenInt</a>(_number:int):Boolean</div><div class="summaryTableDescription">[static] 
+		 int value의 짝수 여부 반환(0은 짝수로 간주)
+		 </div></td><td class="summaryTableOwnerCol">MathUtil</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#getFlagPositiveNumber()" class="signatureLink">getFlagPositiveNumber</a>(_number:Number):Boolean</div><div class="summaryTableDescription">[static] 
+		 parameter number value의 양수 판별 여부 반환.</div></td><td class="summaryTableOwnerCol">MathUtil</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#getPercentagePointBetweenTwoPoints()" class="signatureLink">getPercentagePointBetweenTwoPoints</a>(_point1_x:Number, _point1_y:Number, _point2_x:Number, _point2_y:Number, _percentage:Number):Point</div><div class="summaryTableDescription">[static] 
+		 두 point 사이의 거리를 백분율로 환산하여, 특정 percent에 해당하는 위치를 point로 반환
+		 </div></td><td class="summaryTableOwnerCol">MathUtil</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#getRandomIntMinToMax()" class="signatureLink">getRandomIntMinToMax</a>(_minValue:int, _maxValue:int):int</div><div class="summaryTableDescription">[static] 
+		 최소값 int 이상, 최대값 int 이하의 random int value 반환
+		 </div></td><td class="summaryTableOwnerCol">MathUtil</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#getRandomNumberMinToMax()" class="signatureLink">getRandomNumberMinToMax</a>(_minValue:Number, _maxValue:Number):Number</div><div class="summaryTableDescription">[static] 
+		 최소 Number 이상, 최대 Number 미만의 random Number value 반환
+		 </div></td><td class="summaryTableOwnerCol">MathUtil</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#getRandomPositiveNegative()" class="signatureLink">getRandomPositiveNegative</a>():int</div><div class="summaryTableDescription">[static] 
+		 1 또는 -1 int value을 random하게 반환
+		 </div></td><td class="summaryTableOwnerCol">MathUtil</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#getRandomSurroundPoint()" class="signatureLink">getRandomSurroundPoint</a>(_standardPointX:Number, _standardPointY:Number, _radius:Number):Point</div><div class="summaryTableDescription">[static] 
+		 특정 point(x: _standardPointX, y:_standardPointY)를 기준점으로, _radius value를 반지름으로 가지는 원 내부의 random한 Point를 반환 
+		 </div></td><td class="summaryTableOwnerCol">MathUtil</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#getRemapValue()" class="signatureLink">getRemapValue</a>(_value:Number, _minValue:Number, _maxValue:Number, _minRemapValue:Number, _maxRemapValue:Number):Number</div><div class="summaryTableDescription">[static] 
+		 지정된 최소 ~ 최대값 사이의 특정 value를, 다른 최소 ~ 최대값 영역 사이의 value로 치환하여 출력.</div></td><td class="summaryTableOwnerCol">MathUtil</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#getRotatedPointAroundStandardPoint()" class="signatureLink">getRotatedPointAroundStandardPoint</a>(_standardPoint:Point, _targetPoint:Point, _degree:Number):Point</div><div class="summaryTableDescription">[static] 
+		 _standardPoint를 기준점으로, _targetPoint를 _degree만큼 회전시켰을 때의 point 위치를 반환
+		 </div></td><td class="summaryTableOwnerCol">MathUtil</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#radianToDegree()" class="signatureLink">radianToDegree</a>(_radian:Number):Number</div><div class="summaryTableDescription">[static] 
+		 radian value 를 호도각 value로 변환
+		 </div></td><td class="summaryTableOwnerCol">MathUtil</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#randomCeilInt()" class="signatureLink">randomCeilInt</a>(_number:Number):int</div><div class="summaryTableDescription">[static] 
+		 Math.Ceil(Number value) 이하의 random Int 반환 (paramter Number value가 0 이하일 경우는 Number value 초과, 0 이하의 random Int 반환) 
+		 </div></td><td class="summaryTableOwnerCol">MathUtil</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#roundUnit()" class="signatureLink">roundUnit</a>(_number:Number, _roundToInterval:Number = 1):Number</div><div class="summaryTableDescription">[static] 
+		 Number value를  round 연산을 적용, 특정 10 단위 or 특정 소수점 단위로 변환하여 반환  
+		 </div></td><td class="summaryTableOwnerCol">MathUtil</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#setVectorX()" class="signatureLink">setVectorX</a>(_a:Number, _rot:Number):Number</div><div class="summaryTableDescription">[static] 
+		 물체의 가속도(_a)와 각도(_rot - x축에 대해 형성된 각도로서 rot = Math.atan2(y,x)의 radian value)에 따른 가속도 벡터의 x축 성분 출력.</div></td><td class="summaryTableOwnerCol">MathUtil</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#setVectorY()" class="signatureLink">setVectorY</a>(_a:Number, _rot:Number):Number</div><div class="summaryTableDescription">[static] 
+		 물체의 가속도(_a)와 각도(_rot - y축에 대해 형성된 각도로서 rot = Math.atan2(y,x)의 radian value)에 따른 가속도 벡터의 y축 성분 출력.</div></td><td class="summaryTableOwnerCol">MathUtil</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#sum()" class="signatureLink">sum</a>(... args):Number</div><div class="summaryTableDescription">[static] 
+		 parameter로 전달되는 모든 Number의 합을 반환
+		 </div></td><td class="summaryTableOwnerCol">MathUtil</td></tr></table></div><script language="javascript" type="text/javascript"><!--
+										showHideInherited();
+										--></script><div class="MainContent"><a name="methodDetail"></a><div class="detailSectionHeader">Method Detail</div><a name="abs()"></a><a name="abs(Number)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">abs</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td></tr></table><div class="detailBody"><code> public static function abs(_number:Number):Number</code><p></p><p></p><p>
+		 Fast speed abs function. Math.abs Function과 동일한 연산
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">_number</span>:Number</code></td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code>Number</code> &mdash; Number
+		 </td></tr></table><br/><span class="label"> Example </span><br/><div class="detailBody">Basic usage:<div class="listing" version="3.0"><pre>
+        trace(MathUtil.abs(-5));
+            </pre></div> 
+		 </div></div><a name="average()"></a><a name="average(restParam)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">average</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function average(... args):Number</code><p></p><p></p><p>
+		 parameter로 전달되는 모든 Number의 평균을 반환
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code>... <span class="label">args</span></code></td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code>Number</code> &mdash; Number
+		 </td></tr></table><br/><span class="label"> Example </span><br/><div class="detailBody">Basic usage:<div class="listing" version="3.0"><pre>
+        trace(MathUtil.average(10, 20, 30, 40)); //10, 20, 30, 40의 평균인 25 반환
+            </pre></div>
+		 </div></div><a name="ceilUnit()"></a><a name="ceilUnit(Number,Number)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">ceilUnit</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function ceilUnit(_number:Number, _roundToInterval:Number = 1):Number</code><p></p><p></p><p>
+		 Number value를  Ceil 연산을 적용, 특정 10 단위 or 특정 소수점 단위로 변환하여 반환  
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">_number</span>:Number</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">_roundToInterval</span>:Number</code> (default = <code>1</code>)<code></code> &mdash; Interval
+		 </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code>Number</code> &mdash; Number
+		 </td></tr></table><br/><span class="label"> Example </span><br/><div class="detailBody">Basic usage:<div class="listing" version="3.0"><pre>
+        var testNumber:Number = 12345.12345;
+        trace(MathUtil.ceilUnit(testNumber, 0.1)); //소수점 첫째 자리에서 ceil 연산. 12345.2
+        trace(MathUtil.ceilUnit(testNumber, 100)); //100 단위에서 ceil 연산. 12400
+            </pre></div>
+		 </div></div><a name="degreeToRadian()"></a><a name="degreeToRadian(Number)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">degreeToRadian</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function degreeToRadian(_degree:Number):Number</code><p></p><p></p><p>
+		 호도각 value를 radian value로 변환 출력
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">_degree</span>:Number</code></td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code>Number</code> &mdash; Number
+		 </td></tr></table><p><span class="label">See also</span></p><div class="seeAlso"><a href="MathUtil.html#radianToDegree()" target="">radianToDegree()</a></div><br/><span class="label"> Example </span><br/><div class="detailBody">Basic usage:<div class="listing" version="3.0"><pre>
+        var _rotationValue:Number = 180;
+        trace(MathUtil.degreeToRadian(_rotationValue)); //호도각 180도의 radian value인 3.141592653589793 출력
+            </pre></div>
+		 </div></div><a name="drawConnectedCloseCurve()"></a><a name="drawConnectedCloseCurve(Array,flash.display.Sprite,Number,uint,Number)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">drawConnectedCloseCurve</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function drawConnectedCloseCurve(_pointArr:Array, _canvasSprite:Sprite, _lineThickness:Number, _lineColor:uint = 0, _lineAlpha:Number = 1.0):void</code><p></p><p></p><p>
+		 drawConnectedOpenCurve Function의 기능과 동일하나, line의 시작점과 끝점이 연결된 밀폐된 line을 그립니다.
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">_pointArr</span>:Array</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">_canvasSprite</span>:Sprite</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">_lineThickness</span>:Number</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">_lineColor</span>:uint</code> (default = <code>0</code>)<code></code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">_lineAlpha</span>:Number</code> (default = <code>1.0</code>)<code></code></td></tr></table></p><p><span class="label">See also</span></p><div class="seeAlso"><a href="MathUtil.html#drawConnectedOpenCurve()" target="">drawConnectedOpenCurve()</a></div><br/><span class="label"> Example </span><br/><div class="detailBody">Basic usage:<div class="listing" version="3.0"><pre>
+        var _canvasSprite:Sprite = new Sprite();
+        this.addChild(_canvasSprite);
+        
+        var _point:Point;
+        var _pointArr:Array = new Array();
+        for(var i:uint = 0; i &lt; 5; ++i) {
+            _point = new Point(Math.random() * 200, Math.random() * 200);
+            _pointArr.push(_point);
+        }
+        MathUtil.drawConnectedCloseCurve(_pointArr, _canvasSprite, 1, 0xff0000);
+            </pre></div> 
+		 </div></div><a name="drawConnectedOpenCurve()"></a><a name="drawConnectedOpenCurve(Array,flash.display.Sprite,Number,uint,Number)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">drawConnectedOpenCurve</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function drawConnectedOpenCurve(_pointArr:Array, _canvasSprite:Sprite, _lineThickness:Number, _lineColor:uint = 0, _lineAlpha:Number = 1.0):void</code><p></p><p></p><p>
+		 curveTo를 이용해 그리는 line은 point가 3개 필요합니다. point가 3개 이상일 경우, 연속된 curve를 연결하는 간단한 방법으로 point와 point 사이의 point를 curveTo Function에 이용하여 line을 그립니다. _pointArr param - Point 객체가 담겨있는 Array. _canvasSprite param - _pointArr param 내의 Point들로 line을 그릴 canvas 역할의 Sprite.
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">_pointArr</span>:Array</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">_canvasSprite</span>:Sprite</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">_lineThickness</span>:Number</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">_lineColor</span>:uint</code> (default = <code>0</code>)<code></code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">_lineAlpha</span>:Number</code> (default = <code>1.0</code>)<code></code></td></tr></table></p><p><span class="label">See also</span></p><div class="seeAlso"><a href="MathUtil.html#drawConnectedCloseCurve()" target="">drawConnectedCloseCurve()</a></div><br/><span class="label"> Example </span><br/><div class="detailBody">Basic usage:<div class="listing" version="3.0"><pre>
+        var _canvas:Sprite = new Sprite();
+        this.addChild(_canvas);
+            
+        var _point:Point;
+        var _arr:Array = new Array();
+        var i:uint;
+        for(i = 0; i &lt; 5; i++) {
+            _point = new Point(Math.random() * 200, Math.random() * 200);
+            _arr.push(_point);
+        }
+        MathUtil.drawConnectedOpenCurve(_arr, _canvas, 1, 0xff0000);
+            </pre></div>   
+		 </div></div><a name="floorUnit()"></a><a name="floorUnit(Number,Number)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">floorUnit</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function floorUnit(_number:Number, _roundToInterval:Number = 1):Number</code><p></p><p></p><p>
+		 Number value를  floor 연산을 적용, 특정 10 단위 or 특정 소수점 단위로 변환하여 반환 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">_number</span>:Number</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">_roundToInterval</span>:Number</code> (default = <code>1</code>)<code></code> &mdash; Interval
+		 </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code>Number</code> &mdash; Number
+		 </td></tr></table><br/><span class="label"> Example </span><br/><div class="detailBody">Basic usage:<div class="listing" version="3.0"><pre>
+        var testNumber:Number = 12345.12345;
+        trace(MathUtil.floorUnit(testNumber, 0.1)); //소수점 첫째 자리에서 floor 연산. 12345.2
+        trace(MathUtil.floorUnit(testNumber, 10)); //10 단위에서 floor 연산. 12340
+            </pre></div>
+		 </div></div><a name="getAngleBasedOnSystem()"></a><a name="getAngleBasedOnSystem(Number)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">getAngleBasedOnSystem</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function getAngleBasedOnSystem(_degree:Number):Number</code><p></p><p></p><p>
+		 특정 각도를 Flash System의 각도 단위인 -179 ~ 180 으로 변화하여 반환
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">_degree</span>:Number</code></td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code>Number</code> &mdash; Number
+		 </td></tr></table><br/><span class="label"> Example </span><br/><div class="detailBody">Basic usage:<div class="listing" version="3.0"><pre>
+        trace(MathUtil.getAngleBasedOnSystem(710)); //-10 반환 (710도는 -10도로 변환)
+            </pre></div>
+		 </div></div><a name="getAngleFromTriangleSide()"></a><a name="getAngleFromTriangleSide(Number,Number)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">getAngleFromTriangleSide</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function getAngleFromTriangleSide(_ySideWidth:Number, _xSideWidth:Number):Number</code><p></p><p></p><p>
+		 직각 삼각형의 직각을 이루는 두 변의 길이를 이용하여, 나머지 한 변이 밑변과 이루는 각도 출력
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">_ySideWidth</span>:Number</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">_xSideWidth</span>:Number</code></td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code>Number</code> &mdash; Number
+		 </td></tr></table><br/><span class="label"> Example </span><br/><div class="detailBody">Basic usage:<div class="listing" version="3.0"><pre>
+        var triangleXside:Number = 100;
+        var triangleYside:Number = 100;
+        var _angle:Number = MathUtil.getAngleFromTriangleSide(triangleYside, triangleXside);
+        trace("_angle :", _angle); //직각을 이루는 두 변의 길이가 100, 100 px인 직각 삼각형의 나머지 한 변과 밑변이 이루는 각도인 45 출력
+            </pre></div>
+		 </div></div><a name="getCrossPointBetweenTwoPointsLineAndSomePoint()"></a><a name="getCrossPointBetweenTwoPointsLineAndSomePoint(flash.geom.Point,flash.geom.Point,flash.geom.Point)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">getCrossPointBetweenTwoPointsLineAndSomePoint</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function getCrossPointBetweenTwoPointsLineAndSomePoint(_somePoint:Point, _linePoint_1:Point, _linePoint_2:Point):Point</code><p></p><p></p><p>
+		 linePoint_1 과 linePoint_2를 지나는 직선 상의, somePoint가 직교하는 Point를 반환. 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">_somePoint</span>:Point</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">_linePoint_1</span>:Point</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">_linePoint_2</span>:Point</code></td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code>Point</code> &mdash; Point
+		 </td></tr></table><br/><span class="label"> Example </span><br/><div class="detailBody">Basic usage:<div class="listing" version="3.0"><pre>
+        var _linePoint_1:Point = new Point(0, 0);
+        var _linePoint_2:Point = new Point(100, 100);
+        
+        var _somePoint:Point = new Point(50, 100);
+        var _crossPoint:Point = MathUtil.getCrossPointBetweenTwoPointsLineAndSomePoint(_somePoint, _linePoint_1, _linePoint_2);
+        trace("_crossPoint :", _crossPoint); // (0,0)좌표와 (100,100)좌표를 지나는 직선 상에서, (50,100)의 Point가 직교하는 위치인 (75, 75)의 위치를 반환합니다.
+            </pre></div> 
+		 </div></div><a name="getDistanceBetweenTwoPoints()"></a><a name="getDistanceBetweenTwoPoints(Number,Number,Number,Number)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">getDistanceBetweenTwoPoints</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function getDistanceBetweenTwoPoints(_point1_x:Number, _point1_y:Number, _point2_x:Number, _point2_y:Number):Number</code><p></p><p></p><p>
+		 두 point 사이의 거리 반환
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">_point1_x</span>:Number</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">_point1_y</span>:Number</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">_point2_x</span>:Number</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">_point2_y</span>:Number</code></td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code>Number</code> &mdash; Number
+		 </td></tr></table><br/><span class="label"> Example </span><br/><div class="detailBody">Basic usage:<div class="listing" version="3.0"><pre>
+        var _point_1:Point = new Point(0, 0);
+        var _point_2:Point = new Point(100, 100);
+        trace(MathUtil.getDistanceBetweenTwoPoints(_point_1.x, _point_1.y, _point_2.x, _point_2.y));
+            </pre></div>
+		 </div></div><a name="getDivisibleMinPrimeNumberUnderOneHundred()"></a><a name="getDivisibleMinPrimeNumberUnderOneHundred(uint)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">getDivisibleMinPrimeNumberUnderOneHundred</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function getDivisibleMinPrimeNumberUnderOneHundred(_number:uint):int</code><p></p><p></p><p>
+		 int value를 나눌 수 있는 100 미만의 최소 소수 반환(100 미만의 소수로 나눌 수 없을 경우, -1 반환)
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">_number</span>:uint</code> &mdash; uint value
+		 </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code>int</code> &mdash; int
+		 </td></tr></table><br/><span class="label"> Example </span><br/><div class="detailBody">Basic usage:<div class="listing" version="3.0"><pre>
+         trace(MathUtil.getDivisibleMinPrimeNumberUnderOneHundred(153)); //153을 나눌 수 있는 최소 소수 3 출력
+         trace(MathUtil.getDivisibleMinPrimeNumberUnderOneHundred(211)); //211을 나눌 수 있는 100 미만의 소수가 존재하지 않으므로, -1 출력
+            </pre></div> 
+		 </div></div><a name="getFlagEvenInt()"></a><a name="getFlagEvenInt(int)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">getFlagEvenInt</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function getFlagEvenInt(_number:int):Boolean</code><p></p><p></p><p>
+		 int value의 짝수 여부 반환(0은 짝수로 간주)
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">_number</span>:int</code> &mdash; int value
+		 </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code>Boolean</code> &mdash; Boolean
+		 </td></tr></table><br/><span class="label"> Example </span><br/><div class="detailBody">Basic usage:<div class="listing" version="3.0"><pre>
+         trace(MathUtil.getFlagEvenInt(-2)); // 짝수. true 반환
+         trace(MathUtil.getFlagEvenInt(135)); // 홀수. false 반환
+            </pre></div> 
+		 </div></div><a name="getFlagPositiveNumber()"></a><a name="getFlagPositiveNumber(Number)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">getFlagPositiveNumber</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function getFlagPositiveNumber(_number:Number):Boolean</code><p></p><p></p><p>
+		 parameter number value의 양수 판별 여부 반환. (0은 양수로 간주합니다.)
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">_number</span>:Number</code></td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code>Boolean</code> &mdash; Boolean
+		 </td></tr></table><br/><span class="label"> Example </span><br/><div class="detailBody">Basic usage:<div class="listing" version="3.0"><pre>
+        trace(MathUtil.getFlagPositiveNumber(15)); //return true
+            </pre></div>   
+		 </div></div><a name="getPercentagePointBetweenTwoPoints()"></a><a name="getPercentagePointBetweenTwoPoints(Number,Number,Number,Number,Number)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">getPercentagePointBetweenTwoPoints</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function getPercentagePointBetweenTwoPoints(_point1_x:Number, _point1_y:Number, _point2_x:Number, _point2_y:Number, _percentage:Number):Point</code><p></p><p></p><p>
+		 두 point 사이의 거리를 백분율로 환산하여, 특정 percent에 해당하는 위치를 point로 반환
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">_point1_x</span>:Number</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">_point1_y</span>:Number</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">_point2_x</span>:Number</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">_point2_y</span>:Number</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">_percentage</span>:Number</code></td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code>Point</code> &mdash; Point
+		 </td></tr></table><br/><span class="label"> Example </span><br/><div class="detailBody">Basic usage:<div class="listing" version="3.0"><pre>
+        var _point_1:Point = new Point(0, 20);
+        var _point_2:Point = new Point(100, 20);
+        trace(MathUtil.getPercentagePointBetweenTwoPoints(_point_1.x, _point_1.y, _point_2.x, _point_2.y, 0.8)); //두 point 사이의 80 percent의 위치인 x=80, y=20 Point 반환
+            </pre></div>
+		 </div></div><a name="getRandomIntMinToMax()"></a><a name="getRandomIntMinToMax(int,int)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">getRandomIntMinToMax</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function getRandomIntMinToMax(_minValue:int, _maxValue:int):int</code><p></p><p></p><p>
+		 최소값 int 이상, 최대값 int 이하의 random int value 반환
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">_minValue</span>:int</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">_maxValue</span>:int</code></td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code>int</code> &mdash; int
+		 </td></tr></table><p><span class="label">See also</span></p><div class="seeAlso"><a href="MathUtil.html#getRandomNumberMinToMax()" target="">getRandomNumberMinToMax()</a></div><br/><span class="label"> Example </span><br/><div class="detailBody">Basic usage:<div class="listing" version="3.0"><pre>
+        trace(MathUtil.getRandomIntMinToMax(10, 15));
+            </pre></div> 
+		 </div></div><a name="getRandomNumberMinToMax()"></a><a name="getRandomNumberMinToMax(Number,Number)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">getRandomNumberMinToMax</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function getRandomNumberMinToMax(_minValue:Number, _maxValue:Number):Number</code><p></p><p></p><p>
+		 최소 Number 이상, 최대 Number 미만의 random Number value 반환
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">_minValue</span>:Number</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">_maxValue</span>:Number</code></td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code>Number</code> &mdash; Number
+		 </td></tr></table><p><span class="label">See also</span></p><div class="seeAlso"><a href="MathUtil.html#getRandomIntMinToMax()" target="">getRandomIntMinToMax()</a></div><br/><span class="label"> Example </span><br/><div class="detailBody">Basic usage:<div class="listing" version="3.0"><pre>
+        trace(MathUtil.getRandomNumberMinToMax(10.5, 20.9));
+            </pre></div>  
+		 </div></div><a name="getRandomPositiveNegative()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">getRandomPositiveNegative</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function getRandomPositiveNegative():int</code><p></p><p></p><p>
+		 1 또는 -1 int value을 random하게 반환
+		 </p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code>int</code> &mdash; int
+		 </td></tr></table><br/><span class="label"> Example </span><br/><div class="detailBody">Basic usage:<div class="listing" version="3.0"><pre>
+        trace(MathUtil.getRandomPositiveNegative()); //return 1 or -1
+            </pre></div>   
+		 </div></div><a name="getRandomSurroundPoint()"></a><a name="getRandomSurroundPoint(Number,Number,Number)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">getRandomSurroundPoint</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function getRandomSurroundPoint(_standardPointX:Number, _standardPointY:Number, _radius:Number):Point</code><p></p><p></p><p>
+		 특정 point(x: _standardPointX, y:_standardPointY)를 기준점으로, _radius value를 반지름으로 가지는 원 내부의 random한 Point를 반환 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">_standardPointX</span>:Number</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">_standardPointY</span>:Number</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">_radius</span>:Number</code></td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code>Point</code> &mdash; Point
+		 </td></tr></table><br/><span class="label"> Example </span><br/><div class="detailBody">Basic usage:<div class="listing" version="3.0"><pre>
+        var _axisPoint:Point = new Point(100, 100);
+        trace(MathUtil.getRandomSurroundPoint(_axisPoint.x, _axisPoint.y, 100)); //_axisPoint를 기준으로 100의 반지름을 가지는 원 내부의 random한 위치의 Point 반환
+            </pre></div>
+		 </div></div><a name="getRemapValue()"></a><a name="getRemapValue(Number,Number,Number,Number,Number)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">getRemapValue</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function getRemapValue(_value:Number, _minValue:Number, _maxValue:Number, _minRemapValue:Number, _maxRemapValue:Number):Number</code><p></p><p></p><p>
+		 지정된 최소 ~ 최대값 사이의 특정 value를, 다른 최소 ~ 최대값 영역 사이의 value로 치환하여 출력.
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">_value</span>:Number</code> &mdash; 	in_min ~ in_max 사이의 특정 Number
+		 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">_minValue</span>:Number</code> &mdash; 	_value의 최소값
+		 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">_maxValue</span>:Number</code> &mdash; 	_value의 최대값
+		 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">_minRemapValue</span>:Number</code> &mdash; remap 최소값
+		 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">_maxRemapValue</span>:Number</code> &mdash; remap 최대값
+		 </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code>Number</code> &mdash; Number
+		 </td></tr></table><br/><span class="label"> Example </span><br/><div class="detailBody">Basic usage:<div class="listing" version="3.0"><pre>
+        trace(MathUtil.getRemapValue(80, 0, 100, 1000, 1500)); //0 ~ 100 사이의 80은, 1000 ~ 1500 사이의 1400 으로 치환.
+            </pre></div> 
+		 </div></div><a name="getRotatedPointAroundStandardPoint()"></a><a name="getRotatedPointAroundStandardPoint(flash.geom.Point,flash.geom.Point,Number)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">getRotatedPointAroundStandardPoint</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function getRotatedPointAroundStandardPoint(_standardPoint:Point, _targetPoint:Point, _degree:Number):Point</code><p></p><p></p><p>
+		 _standardPoint를 기준점으로, _targetPoint를 _degree만큼 회전시켰을 때의 point 위치를 반환
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">_standardPoint</span>:Point</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">_targetPoint</span>:Point</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">_degree</span>:Number</code></td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code>Point</code> &mdash; Point
+		 </td></tr></table><br/><span class="label"> Example </span><br/><div class="detailBody">Basic usage:<div class="listing" version="3.0"><pre>
+        var _axisPoint:Point = new Point(100, 100);
+        var _targetRotatePoint:Point = new Point(200, 100);
+        trace(MathUtil.getRotatedPointAroundStandardPoint(_axisPoint, _targetRotatePoint, 90));  
+        //_standardPoint(100, 100)을 기준점으로 _targetPoint(200, 100)를 90도 회전시킨 point(100, 200) 반환
+            </pre></div>
+		 </div></div><a name="radianToDegree()"></a><a name="radianToDegree(Number)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">radianToDegree</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function radianToDegree(_radian:Number):Number</code><p></p><p></p><p>
+		 radian value 를 호도각 value로 변환
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">_radian</span>:Number</code></td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code>Number</code> &mdash; Number
+		 </td></tr></table><p><span class="label">See also</span></p><div class="seeAlso"><a href="MathUtil.html#degreeToRadian()" target="">degreeToRadian()</a></div><br/><span class="label"> Example </span><br/><div class="detailBody">Basic usage:<div class="listing" version="3.0"><pre>
+        var _pi:Number = Math.PI;
+        trace(MathUtil.radianToDegree(_pi)); //PI의 호도각 value인 180 출력
+            </pre></div>
+		 </div></div><a name="randomCeilInt()"></a><a name="randomCeilInt(Number)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">randomCeilInt</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function randomCeilInt(_number:Number):int</code><p></p><p></p><p>
+		 Math.Ceil(Number value) 이하의 random Int 반환 (paramter Number value가 0 이하일 경우는 Number value 초과, 0 이하의 random Int 반환) 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">_number</span>:Number</code></td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code>int</code> &mdash; int
+		 </td></tr></table><br/><span class="label"> Example </span><br/><div class="detailBody">Basic usage:<div class="listing" version="3.0"><pre>
+        trace(MathUtil.randomCeilInt(10));
+            </pre></div> 
+		 </div></div><a name="roundUnit()"></a><a name="roundUnit(Number,Number)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">roundUnit</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function roundUnit(_number:Number, _roundToInterval:Number = 1):Number</code><p></p><p></p><p>
+		 Number value를  round 연산을 적용, 특정 10 단위 or 특정 소수점 단위로 변환하여 반환  
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">_number</span>:Number</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">_roundToInterval</span>:Number</code> (default = <code>1</code>)<code></code> &mdash; Interval
+		 </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code>Number</code> &mdash; Number
+		 </td></tr></table><br/><span class="label"> Example </span><br/><div class="detailBody">Basic usage:<div class="listing" version="3.0"><pre>
+        var testNumber:Number = 12345.12345;
+        trace(MathUtil.roundUnit(testNumber, 0.1)); //소수점 첫째 자리에서 round 연산. 12345.3
+        trace(MathUtil.roundUnit(testNumber, 100)); //100 단위에서 round 연산. 12300
+            </pre></div>
+		 </div></div><a name="setVectorX()"></a><a name="setVectorX(Number,Number)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">setVectorX</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function setVectorX(_a:Number, _rot:Number):Number</code><p></p><p></p><p>
+		 물체의 가속도(_a)와 각도(_rot - x축에 대해 형성된 각도로서 rot = Math.atan2(y,x)의 radian value)에 따른 가속도 벡터의 x축 성분 출력. 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">_a</span>:Number</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">_rot</span>:Number</code></td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code>Number</code> &mdash; Number
+		 </td></tr></table><p><span class="label">See also</span></p><div class="seeAlso"><a href="MathUtil.html#setVectorY()" target="">setVectorY()</a></div><br/><span class="label"> Example </span><br/><div class="detailBody">Basic usage:<div class="listing" version="3.0"><pre>
+        var y_1:Number = -3;
+        var x_1:Number = -7;
+        
+        var a:Number = 20;
+        var rot:Number = Math.atan2(y_1, x_1); //각도의 radian value
+        
+        var vector_x:Number = MathUtil.setVectorX(a, rot);
+        var vector_y:Number = MathUtil.setVectorY(a, rot);
+        
+        trace("vector_x : " + vector_x);
+        trace("vector_y : " + vector_y);
+            </pre></div>
+		 </div></div><a name="setVectorY()"></a><a name="setVectorY(Number,Number)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">setVectorY</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function setVectorY(_a:Number, _rot:Number):Number</code><p></p><p></p><p>
+		 물체의 가속도(_a)와 각도(_rot - y축에 대해 형성된 각도로서 rot = Math.atan2(y,x)의 radian value)에 따른 가속도 벡터의 y축 성분 출력. 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">_a</span>:Number</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">_rot</span>:Number</code></td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code>Number</code> &mdash; Number
+		 </td></tr></table><p><span class="label">See also</span></p><div class="seeAlso"><a href="MathUtil.html#setVectorX()" target="">setVectorX()</a></div><br/><span class="label"> Example </span><br/><div class="detailBody">Basic usage:<div class="listing" version="3.0"><pre>
+        var y_1:Number = -3;
+        var x_1:Number = -7;
+        
+        var a:Number = 20;
+        var rot:Number = Math.atan2(y_1, x_1); //각도의 radian value
+        
+        var vector_x:Number = MathUtil.setVectorX(a, rot);
+        var vector_y:Number = MathUtil.setVectorY(a, rot);
+        
+        trace("vector_x : " + vector_x);
+        trace("vector_y : " + vector_y);
+            </pre></div>
+		 </div></div><a name="sum()"></a><a name="sum(restParam)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">sum</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function sum(... args):Number</code><p></p><p></p><p>
+		 parameter로 전달되는 모든 Number의 합을 반환
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code>... <span class="label">args</span></code></td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code>Number</code> &mdash; Number
+		 </td></tr></table><br/><span class="label"> Example </span><br/><div class="detailBody">Basic usage:<div class="listing" version="3.0"><pre>
+        trace(MathUtil.sum(10, 20, 30, 40)); //10, 20, 30, 40의 합인 100 반환
+            </pre></div>
+		 </div></div><br/><br/><hr><br/><p></p><center class="copyright"><footer></footer><br/>Tue Jan 22 2013, 02:21 AM +09:00  </center></div></body></html><!--<br/>Tue Jan 22 2013, 02:21 AM +09:00  -->

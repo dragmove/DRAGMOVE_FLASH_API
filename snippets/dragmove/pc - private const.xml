@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<snippet filetemplate="false" extension="cfm">
+<name>pc - private const</name>
+<help>pc - private const</help>
+<starttext><![CDATA[private const ]]></starttext>
+<endtext><![CDATA[;]]></endtext>
+</snippet>

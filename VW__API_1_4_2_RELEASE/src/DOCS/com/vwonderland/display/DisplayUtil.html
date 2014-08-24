@@ -1,0 +1,75 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"><!-- saved from url=(0014)about:internet --><html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link rel="stylesheet" href="../../../style.css" type="text/css" media="screen"><link rel="stylesheet" href="../../../print.css" type="text/css" media="print"><link rel="stylesheet" href="../../../override.css" type="text/css"><meta name="keywords" content="DisplayUtil,com.vwonderland.display.DisplayUtil,destroy,destroy,destroyDetail,divideMultiLineTextField,drawCircleSprite,drawDiagonalRectSpriteByGapBottomX,drawDiagonalRectSpriteByRotation,drawRadialGradientCircleSprite,drawRectShape,drawRectSprite,drawRectSpriteCenterAxis,getFinalVertexIndex,getFitRectSize,getVertexPosition,init,makeCaptureBitmap,makeTF,makeTrianglesRect,removeAllChildren,removeDisplayObject,render,renderDetail,renderTimerInteraction,setInstance,setMultiLineTextByTextWidth,setRenderTimer,setTextByTextWidth,setTrianglesWireFrame,setVertexPosition,startRender,stopRender,update"><title>com.vwonderland.display.DisplayUtil</title></head><body><script language="javascript" type="text/javascript" src="../../../asdoc.js"></script><script language="javascript" type="text/javascript" src="../../../help.js"></script><script language="javascript" type="text/javascript" src="../../../cookies.js"></script><script language="javascript" type="text/javascript"><!--
+				asdocTitle = 'DisplayUtil - API Documentation';
+				var baseRef = '../../../';
+				window.onload = configPage;
+			--></script>
+<script type="text/javascript">
+			scrollToNameAnchor();
+		</script><table class="titleTable" cellpadding="0" cellspacing="0" id="titleTable" style="display:none"><tr><td class="titleTableTitle" align="left">API Documentation</td><td class="titleTableTopNav" align="right"><a href="../../../package-summary.html" onclick="loadClassListFrame('../../../all-classes.html')">All Packages</a>&nbsp;|&nbsp;<a href="../../../class-summary.html" onclick="loadClassListFrame('../../../all-classes.html')">All Classes</a>&nbsp;|&nbsp;<a href="../../../all-index-A.html" onclick="loadClassListFrame('../../../index-list.html')">Index</a>&nbsp;|&nbsp;<a id="framesLink1" href="../../../index.html?com/vwonderland/display/DisplayUtil.html&amp;com/vwonderland/display/class-list.html">Frames</a><a id="noFramesLink1" style="display:none" href="" onclick="parent.location=document.location"> No Frames </a></td><td class="titleTableLogo" align="right" rowspan="3"><img src="../../../images/logo.jpg" class="logoImage" alt=" Adobe Logo " title=" Adobe Logo "></td></tr><tr class="titleTableRow2"><td class="titleTableSubTitle" id="subTitle" align="left">DisplayUtil</td><td class="titleTableSubNav" id="subNav" align="right"><a href="#methodSummary">Methods</a></td></tr><tr class="titleTableRow3"><td colspan="3">&nbsp;</td></tr></table><script language="javascript" type="text/javascript" xml:space="preserve">
+				<!--
+				
+					if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("DisplayUtil"); titleBar_setSubNav(false,false,false,false,false,false,false,false,true,false,false	,false,false,false,false,false);}	
+				-->
+			</script><div xmlns:fn="http://www.w3.org/2005/xpath-functions" class="MainContent"><table class="classHeaderTable" cellpadding="0" cellspacing="0"><tr><td class="classHeaderTableLabel">Package</td><td><a href="package-detail.html" onclick="javascript:loadClassListFrame('class-list.html')">com.vwonderland.display</a></td></tr><tr><td class="classHeaderTableLabel">Class</td><td class="classSignature">public  class  DisplayUtil</td></tr><tr><td class="classHeaderTableLabel">Inheritance</td><td class="inheritanceList">DisplayUtil  <img src="../../../images/inherit-arrow.gif" title="Inheritance" alt="Inheritance" class="inheritArrow"> Object</td></tr></table><p></p><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b> Language Version :&nbsp;</b></td><td>ActionScript 3.0</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b> Since :&nbsp;</b></td><td>15.07.2010</td></tr></table><table cellpadding="0" cellspacing="0" border="0"><tr><td style="white-space:nowrap" valign="top"><b> Runtime Versions :&nbsp;</b></td><td>AIR 1.0, Flash Player  9.0</td></tr></table><p></p><p></p><p></p>
+	 static Display Utils
+	 <p></p><br/><hr></div><a name="methodSummary"></a><div class="summarySection"><div class="summaryTableTitle">Public Methods </div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableMethod"><tr><th>&nbsp;</th><th colspan="2">Method</th><th class="summaryTableOwnerCol">Defined By</th></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#getFitRectSize()" class="signatureLink">getFitRectSize</a>(_originalWidth:Number, _originalHeight:Number, _areaWidth:int, _areaHeight:int, _flag_fillArea:Boolean = false):Rectangle</div><div class="summaryTableDescription">[static] 
+		 특정 Area의 width, height에 맞춰 size 변경된 image(or Rectangle, MovieClip, Sprite)의 width, height 값을 가지는 Rectangle 반환.</div></td><td class="summaryTableOwnerCol">DisplayUtil</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#makeCaptureBitmap()" class="signatureLink">makeCaptureBitmap</a>(_displayObject:DisplayObject, _transparent:Boolean, _smoothing:Boolean = true):Bitmap</div><div class="summaryTableDescription">[static] 
+		 DisplayObject 객체를 capture하여 Bitmap을 반환
+		 </div></td><td class="summaryTableOwnerCol">DisplayUtil</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#removeAllChildren()" class="signatureLink">removeAllChildren</a>(_displayObjectContainer:DisplayObjectContainer):void</div><div class="summaryTableDescription">[static] 
+		 DisplayObjectContinaer 객체 내부의 모든 display 객체의 removeChild 수행
+		 </div></td><td class="summaryTableOwnerCol">DisplayUtil</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#removeDisplayObject()" class="signatureLink">removeDisplayObject</a>(_displayObject:DisplayObject):void</div><div class="summaryTableDescription">[static] 
+		 DisplayObject 객체의 parent.removeChild 수행
+		 </div></td><td class="summaryTableOwnerCol">DisplayUtil</td></tr></table></div><script language="javascript" type="text/javascript"><!--
+										showHideInherited();
+										--></script><div class="MainContent"><a name="methodDetail"></a><div class="detailSectionHeader">Method Detail</div><a name="getFitRectSize()"></a><a name="getFitRectSize(Number,Number,int,int,Boolean)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">getFitRectSize</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td></tr></table><div class="detailBody"><code> public static function getFitRectSize(_originalWidth:Number, _originalHeight:Number, _areaWidth:int, _areaHeight:int, _flag_fillArea:Boolean = false):Rectangle</code><p></p><p></p><p>
+		 특정 Area의 width, height에 맞춰 size 변경된 image(or Rectangle, MovieClip, Sprite)의 width, height 값을 가지는 Rectangle 반환.
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">_originalWidth</span>:Number</code> &mdash; original width
+		 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">_originalHeight</span>:Number</code> &mdash; original height
+		 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">_areaWidth</span>:int</code> &mdash; area width
+		 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">_areaHeight</span>:int</code> &mdash; area height
+		 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">_flag_fillArea</span>:Boolean</code> (default = <code>false</code>)<code></code> &mdash; fill the area
+		 </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code>Rectangle</code> &mdash; Rectangle
+		 </td></tr></table><br/><span class="label"> Example </span><br/><div class="detailBody">Basic usage:<div class="listing" version="3.0"><pre>
+        var _bmp:Bitmap = new Bitmap(new _linkageBitmapName(0, 0));
+        this.addChild(_bmp);
+            
+        var rect:Rectangle = DisplayUtil.getFitRectSize(_bmp.width, _bmp.height, 100, 100); //_bmp 객체의 width, height 비율을 유지하면서 100, 100 size의 Area 내에 포함되는 크기의 Rectangle 반환.
+        bmp.width = rect.width;
+        bmp.height = rect.height;
+            </pre></div> 
+		 </div></div><a name="makeCaptureBitmap()"></a><a name="makeCaptureBitmap(flash.display.DisplayObject,Boolean,Boolean)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">makeCaptureBitmap</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function makeCaptureBitmap(_displayObject:DisplayObject, _transparent:Boolean, _smoothing:Boolean = true):Bitmap</code><p></p><p></p><p>
+		 DisplayObject 객체를 capture하여 Bitmap을 반환
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">_displayObject</span>:DisplayObject</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">_transparent</span>:Boolean</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">_smoothing</span>:Boolean</code> (default = <code>true</code>)<code></code></td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code>Bitmap</code> &mdash; Bitmap
+		 </td></tr></table><p><span class="label">See also</span></p><div class="seeAlso">flash.Display.Bitmap</div><br/><span class="label"> Example </span><br/><div class="detailBody">Basic usage:<div class="listing" version="3.0"><pre>
+        var _tf:TextField = new TextField();
+        _tf.text = "v-wonderland";
+        
+        var _tfCaptureBmp:Bitmap = DisplayUtil.makeCaptureBitmap(_tf, true, true);
+        this.addChild(_tfCaptureBmp);
+            </pre></div> 
+		 </div></div><a name="removeAllChildren()"></a><a name="removeAllChildren(flash.display.DisplayObjectContainer)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">removeAllChildren</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function removeAllChildren(_displayObjectContainer:DisplayObjectContainer):void</code><p></p><p></p><p>
+		 DisplayObjectContinaer 객체 내부의 모든 display 객체의 removeChild 수행
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">_displayObjectContainer</span>:DisplayObjectContainer</code></td></tr></table></p><br/><span class="label"> Example </span><br/><div class="detailBody">Basic usage:<div class="listing" version="3.0"><pre> 
+        var _parentRect:Sprite = SimpleRect.drawRectSprite();
+        this.addChild(_parentRect);
+        
+        var _childRect:Sprite = SimpleRect.drawRectSprite(100, 100, 0xff0000);
+        _childRect.x = 50;
+        _childRect.y = 50;
+        _parentRect.addChild(_childRect);
+        
+        var _childCircle:Sprite = SimpleCircle.drawCircleSprite(50, 0x00ff00);
+        _childCircle.x = 150;
+        _childCircle.y = 150;
+        _parentRect.addChild(_childCircle);
+        
+        DisplayUtil.removeAllChildren(_parentRect);
+            </pre></div> 
+		 </div></div><a name="removeDisplayObject()"></a><a name="removeDisplayObject(flash.display.DisplayObject)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">removeDisplayObject</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function removeDisplayObject(_displayObject:DisplayObject):void</code><p></p><p></p><p>
+		 DisplayObject 객체의 parent.removeChild 수행
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">_displayObject</span>:DisplayObject</code></td></tr></table></p><br/><span class="label"> Example </span><br/><div class="detailBody">Basic usage:<div class="listing" version="3.0"><pre> 
+        var _rect:Sprite = SimpleRect.drawRectSprite();
+        this.addChild(_rect);
+        DisplayUtil.removeDisplayObject(_rect);
+            </pre></div> 
+		 </div></div><br/><br/><hr><br/><p></p><center class="copyright"><footer></footer><br/>Tue Jan 22 2013, 02:21 AM +09:00  </center></div></body></html><!--<br/>Tue Jan 22 2013, 02:21 AM +09:00  -->

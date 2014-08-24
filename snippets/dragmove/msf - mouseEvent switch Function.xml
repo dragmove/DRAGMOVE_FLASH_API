@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<snippet filetemplate="false" extension="cfm">
+<name>msf - mouseEvent switch Function</name>
+<help>msf - mouseEvent switch Function</help>
+<starttext><![CDATA[private function btnMouseInteraction(e:MouseEvent):void {
+	var _targetBtn:ButtonClass = e.currentTarget as ButtonClass;
+	
+	switch(e.type) {
+		case MouseEvent.ROLL_OVER :
+			
+		break;
+		
+		case MouseEvent.ROLL_OUT :
+			
+		break;
+		
+		case MouseEvent.CLICK :
+			
+		break;
+	}
+}]]></starttext>
+<endtext><![CDATA[]]></endtext>
+</snippet>

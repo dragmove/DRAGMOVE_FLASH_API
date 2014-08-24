@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<snippet filetemplate="false" extension="cfm">
+<name>stt - InitUtil_setInit</name>
+<help>stt - InitUtil_setInit</help>
+<starttext><![CDATA[InitUtil.SetInit(this, StageAlign.TOP_LEFT, StageScaleMode.NO_SCALE);
+InitUtil.SetTabFocusEnable(this, false);
+ContextMenuUtil.setContextMenu(this, false);
+
+SingletonStage.getInstance().setStage(this.stage);]]></starttext>
+<endtext><![CDATA[]]></endtext>
+</snippet>

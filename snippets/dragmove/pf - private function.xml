@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<snippet filetemplate="false" extension="cfm">
+<name>pf - private function</name>
+<help>pf - private function</help>
+<starttext><![CDATA[private function ]]></starttext>
+<endtext><![CDATA[():void {
+	
+}]]></endtext>
+</snippet>

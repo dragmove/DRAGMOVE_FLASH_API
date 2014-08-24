@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<snippet filetemplate="false" extension="cfm">
+<name>swf - embed Setting width height frameRate etc</name>
+<help>swf - embed Setting width height frameRate etc</help>
+<starttext><![CDATA[[SWF( width="1024", height="768", frameRate="34", backgroundColor="0xffffff" )]]]></starttext>
+<endtext><![CDATA[]]></endtext>
+</snippet>
